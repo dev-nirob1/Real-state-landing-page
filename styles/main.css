@@ -1,0 +1,180 @@
+/* reset styles  */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* common styles  */
+a {
+    color: inherit;
+}
+
+.section-name {
+    background-color: #FFEEEB;
+    color: #FF5A3C;
+    padding: 5px 20px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* header section starts here  */
+header {
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(46, 56, 220, 0.2);
+}
+
+header figure {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    display: flex;
+    padding: .5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    /* font-weight: bold; */
+    color: #5C727D;
+}
+
+header nav ul {
+    display: flex;
+
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    padding: 1rem .8rem;
+    font-size: 1.125rem;
+}
+
+header nav ul li a:hover {
+    color: #FF5A3C;
+}
+
+/* header section ends here  */
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* banner section starts here */
+#banner {
+    background-color: #F2F6F7;
+    margin-bottom: 5rem;
+}
+
+
+.slider-1 {
+    align-items: center;
+}
+
+/* banner section ends here */
+
+/* about us section starts here */
+#about {
+    margin-bottom: 5rem;
+}
+
+/* about us section ends here */
+
+/*statistics section starts here*/
+#statistics {
+    background-color: #F2F6F7;
+    padding: 5rem 3rem;
+    margin-bottom: 5rem;
+}
+
+/*statistics section ends here*/
+
+/* about-two section starts here  */
+#about-two {
+    margin-bottom: 5rem;
+    padding: 3rem;
+}
+
+/* about-two section ends here  */
+
+/* services section starts here  */
+#services {
+    background-color: #F2F6F7;
+    margin-bottom: 5rem;
+    padding: 5rem 3rem;
+}
+
+#services .card {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid red;
+}
+
+/* services section ends here  */
+
+/* properties section starts here */
+#properties {
+    margin-bottom: 5rem;
+}
+
+#properties .properties-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+/* properties section ends here  */
+
+/* appartement section starts here  */
+#apartment{
+    margin-bottom: 5rem;
+    padding: 5rem 3rem;
+}
+#apartment .categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 20px;
+}
+/* appartement section ends here  */
+
+/*footer section starts here*/
+footer {
+    background-color: #171B2A;
+    color: #fff;
+}
+
+.wrapper {
+    padding: 5rem 3rem;
+
+}
+
+.footer-bottom {
+    background-color: #282B38;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.footer-bottom ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*footer section ends here*/
