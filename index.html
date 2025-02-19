@@ -12,6 +12,13 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 
+
+    <!-- google icons cdn -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
     <!-- css files  -->
     <link rel="stylesheet" href="./styles/grid.css">
     <link rel="stylesheet" href="./styles/main.css">
@@ -20,25 +27,30 @@
 <body>
     <!-- header starts here  -->
     <header>
-        <nav class="nav">
+        <nav class="my-container flex justify-between align-center navlinks-color">
             <figure>
                 <img src="./assets/logo (1).png" alt="logo">
             </figure>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+            <div class="hamburger">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-links" href="#">Home</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
+                <li class="nav-item">
+                    <a class="nav-links" href="#">About</a>
                 </li>
-                <li>
-                    <a href="#">Project</a>
+                <li class="nav-item">
+                    <a class="nav-links" href="#">Project</a>
                 </li>
-                <li>
-                    <a href="#">Gallary</a>
+                <li class="nav-item">
+                    <a class="nav-links" href="#">Gallary</a>
                 </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li class="nav-item">
+                    <a class="nav-links" href="#">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -46,23 +58,31 @@
     <!-- header ends here  -->
 
     <!-- main content  -->
-    <main>
+    <main class="body-font-family">
         <!-- banner section starts here  -->
-        <section id="banner">
-            <div class="all-1 large-2 slider-1 p-5">
+        <section class="section-bg">
+            <div class="my-container large-2 slider-1">
                 <div class="image-responsive">
                     <img class="image-responsive" src="./assets/21.png" alt="">
                 </div>
-                <div class="content text-right">
-                    <p>Real State Agency</p>
-                    <h1>The Right Place <br> of House Finding</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                <div class=" text-right">
+                    <p class="flex justify-end">
+                        <span class="material-symbols-outlined orange-text-color">
+                            home
+                        </span>
+                        Real State Agency
+                    </p>
+                    <h1 class="section-title mb-1 text-dark">The Right Place <br> of House Finding</h1>
+
+                    <p class="mb-1 text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do
+                        eiusmod tempor
+                        incididunt ut
                         labore.</p>
-                    <div class="btn-container">
-                        <button>
-                            OUR SERVICES
+                    <div class="flex align-center justify-end gap-1">
+                        <button class="btn">
+                            <span>OUR SERVICES</span>
                         </button>
-                        <button>
+                        <button class="btn">
                             LEARN MORE
                         </button>
                     </div>
@@ -72,71 +92,116 @@
         <!-- banner section ends here  -->
 
         <!-- about section starts here  -->
-        <section id="about">
-            <div class="all-1 large-2">
-                <div>
-                    <img src="./assets/7.png" alt="">
-                </div>
-                <div>
-                    <p class="section-name">
-                        About Us
-                    </p>
-                    <h1>
-                        The Leading Real Estate Rental Marketplace.
-                    </h1>
-                    <p>Over 39,000 people work for us in more than 70 countries all over the This breadth of global
-                        coverage, combined with specialist services</p>
-
-                    <div class="small-2">
-                        <div>
-                            <img src="./assets/21(1).png" alt="">
-                            <p>Smart Home Design</p>
-                        </div>
-                        <div>
-                            <img src="./assets/22.png" alt="">
-                            <p>Beautiful Scene Around</p>
-                        </div>
-                        <div>
-                            <img src="./assets/23.png" alt="">
-                            <p>Exceptional Lifestyle</p>
-                        </div>
-                        <div>
-                            <img src="./assets/23.png" alt="">
-                            <p>Complete 24/7 Security</p>
+        <section class="my-container section-padding">
+            <div class="all-1 large-2 align-center gap-2">
+                <!-- image div  -->
+                <div class="image-responsive relative">
+                    <img class="image-responsive" src="./assets/7.png" alt="image">
+                    <div class="video-image">
+                        <div class="image-responsive relative">
+                            <img class="image-responsive" src="./assets/8.png" alt="image">
+                            <!-- play btn  -->
+                            <button class="btn-circle btn-center-align">
+                                <span class="material-symbols-outlined flex align-center justify-center">
+                                    play_arrow
+                                </span></button>
                         </div>
                     </div>
-                    <p>
+                </div>
+
+                <!-- wrapper div for content  -->
+                <div>
+                    <!-- section header div starts -->
+                    <div>
+                        <p class="section-name mb-1">
+                            About Us
+                        </p>
+                        <h1 class="section-title text-dark mb-1">
+                            The Leading Real Estate Rental Marketplace.
+                        </h1>
+                    </div>
+                    <!-- section header div ends -->
+
+                    <p class="text-light mb-1">Over 39,000 people work for us in more than 70 countries all over the
+                        This breadth of global
+                        coverage, combined with specialist services</p>
+
+
+                    <!-- icon + title container  -->
+                    <div class="flex align-center text-light">
+                        <div class="flex-1">
+                            <div class="flex align-center mb-1">
+                                <span class="material-symbols-outlined flex align-center justify-center about-icons">
+                                    home
+                                </span>
+                                <p>Smart Home Design</p>
+                            </div>
+                            <div class="flex align-center">
+                                <span class="material-symbols-outlined flex align-center justify-center about-icons">
+                                    landscape_2
+                                </span>
+                                <p>Beautiful Scene Around</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-1">
+                            <div class="flex align-center mb-1">
+                                <span class="material-symbols-outlined flex align-center justify-center about-icons">
+                                    heart_plus
+                                </span>
+                                <p>Exceptional Lifestyle</p>
+                            </div>
+                            <div class="flex align-center">
+                                <span class="material-symbols-outlined flex align-center justify-center about-icons">
+                                    encrypted_add
+                                </span>
+                                <p>Complete 24/7 Security</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- icon + title container ends  -->
+
+
+                    <p class="about-quote text-light">
                         "Enimad minim veniam quis nostrud exercitation
                         llamco laboris. Lorem ipsum dolor sit amet"
                     </p>
-                    <button>OUR SERVICES</button>
+                    <button class="btn btn-primary">OUR SERVICES</button>
                 </div>
             </div>
         </section>
         <!-- about section ends here  -->
 
         <!-- statistics section starts here  -->
-        <section id="statistics">
-            <div class="all-2 large-4">
-                <div>
-                    <img src="./assets/21(1).png" alt="">
-                    <h1>560+</h1>
-                    <p>Total Area Sq</p>
+        <section class="section-bg">
+            <div class="my-container all-1 small-2 large-4 gap-1">
+                <div class="flex-col justify-center align-center text-center">
+                    <span class="material-symbols-outlined statistics-icons">
+                        crop_square
+                    </span>
+                    <h1 class="section-title text-dark">560+</h1>
+                    <p class="text-light">Total Area Sq</p>
                 </div>
-                <div>
-                    <img src="./assets/21(1).png" alt="">
-                    <h1>197K+</h1>
-                    <p>Apartments Sold</p>
+                <div class="flex-col justify-center align-center text-center">
+                    <span class="material-symbols-outlined statistics-icons">
+                        apartment
+                    </span>
+                    <h1 class="section-title text-dark">197K+</h1>
+                    <p class="text-light">Apartments Sold</p>
                 </div>
-                <div>
-                    <img src="./assets/21(1).png" alt="">
-                    <h1>268+</h1>
-                    <p>Total Constructions</p>
+                <div class="flex-col justify-center align-center text-center">
+                    <span class="material-symbols-outlined statistics-icons">
+                        precision_manufacturing
+                    </span>
+                    <h1 class="section-title text-dark">268+</h1>
+                    <p class="text-light">Total Constructions</p>
                 </div>
-                <div>
-                    <img src="./assets/21(1).png" alt="">
-                    <h1>340+</h1>
-                    <p>Apartio Rooms</p>
+                <div class="flex-col justify-center align-center text-center">
+                    <span class="material-symbols-outlined statistics-icons">
+                        chair
+                    </span>
+                    <h1 class="section-title text-dark">340+</h1>
+                    <p class="text-light">Apartio Rooms</p>
                 </div>
             </div>
         </section>
@@ -346,17 +411,21 @@
             </div>
 
             <div class="categories mb-3">
-                    <p>The Studio</p>
-                    <p>Deluxe Portion</p>
-                    <p>Penthouse</p>
-                    <p>Top Garden</p>
-                    <p>Double Height</p>
+                <p>The Studio</p>
+                <p>Deluxe Portion</p>
+                <p>Penthouse</p>
+                <p>Top Garden</p>
+                <p>Double Height</p>
             </div>
             <div class="all-1 large-2 gap-3">
                 <div class="p-4" style="background-color: #FF5A3C; color: #fff;">
                     <h2>Double Height</h2>
-                    <p class="mb-3">Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua. sed ayd minim veniam.</p>
-                    <p>Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua. sed ayd minim veniam.</p>
+                    <p class="mb-3">Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit
+                        amet cons aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua.
+                        sed ayd minim veniam.</p>
+                    <p>Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons
+                        aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua. sed ayd
+                        minim veniam.</p>
                 </div>
                 <div class="image-responsive">
                     <img class="image-responsive" src="./assets/10.png" alt="">
@@ -367,31 +436,321 @@
 
         <!-- parallax with pop-up  section starts here  -->
         <section id="parallax">
-
+            <div class="pop-up-btn">
+                <button class="btn-circle">Play</button>
+            </div>
         </section>
         <!-- parallax with pop-up  section ends here  -->
 
         <!-- Aminities  section starts here  -->
         <section id="aminities">
+            <div style="text-align: center;">
+                <p class="section-name">Our Aminities</p>
+                <h1>Building Aminities</h1>
+            </div>
 
+            <div class="all-1 medium-2 large-4 gap-1 aminities-card">
+                <div>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="material-icons">directions_car</i>
+                        </span>
+                        <h3>Parking Space</h3>
+                        <span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="material-icons">pool</i>
+                        </span>
+                        <h3>Swimming Pool</h3>
+                        <span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="material-icons">verified_user</i>
+                        </span>
+                        <h3>Private Security</h3>
+                        <span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="material-icons">house</i>
+                        </span>
+                        <h3>Medical Center</h3>
+                        <span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="material-icons">menu_book</i>
+                        </span>
+                        <h3>Library Area</h3>
+                        <span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="material-icons">king_bed</i>
+                        </span>
+                        <h3>King Size Beds</h3>
+                        <span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="material-icons">house</i>
+                        </span>
+                        <h3>Smart Homes</h3>
+                        <span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="material-icons">tune</i>
+                        </span>
+                        <h3>Kid's Playland</h3>
+                        <span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </section>
         <!-- Aminities section ends here  -->
 
         <!-- testimonials section starts here  -->
         <section id="testimonials">
+            <div style="text-align: center;">
+                <p class="section-name">Our Testimonial</p>
+                <h1>Clients Feedback</h1>
+            </div>
+
+            <div class="testimonials-container all-1 gap-1 medium-2 large-3">
+                <div class="testimonial">
+                    <div>
+                        <span class="icon">
+                            <i class="material-icons">format_quote</i>
+                        </span>
+                        <p>
+                            Precious ipsum dolor sit amet
+                            consectetur adipisicing elit, sed dos
+                            mod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad min
+                            veniam, quis nostrud Precious ips
+                            um dolor sit amet, consecte
+                        </p>
+                    </div>
+                    <div class="all-2">
+                        <img height="60" src="./assets/author.jpg" alt="">
+                        <div>
+                            <h4>Adam Josheph</h4>
+                            <p>Selling Agent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div>
+                        <span class="icon">
+                            <i class="material-icons">format_quote</i>
+                        </span>
+                        <p>
+                            Precious ipsum dolor sit amet
+                            consectetur adipisicing elit, sed dos
+                            mod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad min
+                            veniam, quis nostrud Precious ips
+                            um dolor sit amet, consecte
+                        </p>
+                    </div>
+                    <div class="all-2">
+                        <img height="60" src="./assets/author.jpg" alt="">
+                        <div>
+                            <h4>Adam Josheph</h4>
+                            <p>Selling Agent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div>
+                        <span class="icon">
+                            <i class="material-icons">format_quote</i>
+                        </span>
+                        <p>
+                            Precious ipsum dolor sit amet
+                            consectetur adipisicing elit, sed dos
+                            mod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad min
+                            veniam, quis nostrud Precious ips
+                            um dolor sit amet, consecte
+                        </p>
+                    </div>
+                    <div class="all-2">
+                        <img height="60" src="./assets/author.jpg" alt="">
+                        <div>
+                            <h4>Adam Josheph</h4>
+                            <p>Selling Agent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
         <!-- testimonials section ends here  -->
 
         <!-- blogs section starts here  -->
         <section id="blogs">
+            <div style="text-align: center;">
+                <p class="section-name">News & Blogs</p>
+                <h1>Leatest News Feeds</h1>
+            </div>
+
+            <div class="all-1 medium-2 large-3 gap-1">
+                <div class="blog-card">
+                    <a class="image-responsive" href="#">
+                        <img height="300" class="image-responsive" src="./assets/menu-banner-1.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div class="all-2">
+                            <div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">person</span>
+                                    <span>by: Admin</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        sell
+                                    </span>
+                                    <span>Decorate</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="#">10 Brilliant Ways To Decorate Your Home</a>
+                        </h3>
+                        <hr>
+                        <div class="all-2">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span> <span>June 24, 2021</span>
+                            </div>
+                            <div>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <a class="image-responsive" href="#">
+                        <img height="300" class="image-responsive" src="./assets/menu-banner-1.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div class="all-2">
+                            <div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">person</span>
+                                    <span>by: Admin</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        sell
+                                    </span>
+                                    <span>Decorate</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="#">10 Brilliant Ways To Decorate Your Home</a>
+                        </h3>
+                        <hr>
+                        <div class="all-2">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span> <span>June 24, 2021</span>
+                            </div>
+                            <div>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <a class="image-responsive" href="#">
+                        <img height="300" class="image-responsive" src="./assets/menu-banner-1.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div class="all-2">
+                            <div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">person</span>
+                                    <span>by: Admin</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        sell
+                                    </span>
+                                    <span>Decorate</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="#">10 Brilliant Ways To Decorate Your Home</a>
+                        </h3>
+                        <hr>
+                        <div class="all-2">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span> <span>June 24, 2021</span>
+                            </div>
+                            <div>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
         <!-- blogs section ends here  -->
 
         <!-- call to action section starts here  -->
         <section id="cta">
-
+            <button class="btn">
+                <span>Hover Me</span>
+            </button>
         </section>
         <!-- call to action section ends here  -->
 
