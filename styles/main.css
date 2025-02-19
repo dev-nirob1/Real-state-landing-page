@@ -75,11 +75,12 @@ a {
 .flex {
     display: flex;
 }
-.flex-col{
+
+.flex-col {
     flex-direction: column;
 }
 
-.flex-1{
+.flex-1 {
     flex: 1;
 }
 
@@ -117,16 +118,17 @@ a {
 .section-title {
     font-size: var(--heading-1);
 }
-.card-title{
+
+.card-title {
     font-size: var(--heading-3)
 }
 
 /*btn classes*/
 
-/* //todo font and padding to update  */ 
+/* //todo font and padding to update  */
 
 /* base btn class  */
- .btn {
+.btn {
     position: relative;
     font-size: 16px;
     padding: 12px 25px;
@@ -147,7 +149,7 @@ a {
     border: 1px solid balck;
 }
 
-.btn-circle{
+.btn-circle {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -158,6 +160,7 @@ a {
     outline: none;
 
 }
+
 .btn-primary::before {
     background: var(--primary-color);
 }
@@ -165,6 +168,7 @@ a {
 .btn-secondary::before {
     background: var(--secondary-color);
 }
+
 .btn::before {
     content: "";
     position: absolute;
@@ -176,7 +180,7 @@ a {
 
 .btn:hover {
     color: black;
-    border:1px solid black;
+    border: 1px solid black;
 }
 
 .btn:hover::before {
@@ -197,65 +201,6 @@ a {
 .para-md-size {}
 
 .para-lg-size {}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* header section starts here  */
 header {
@@ -294,10 +239,11 @@ header nav {
     transition: all .3s ease-in-out;
 }
 
-section{
-    margin-bottom: 6rem;
-    padding: 5rem 3rem;
+section {
+    margin-bottom: 6rem !important;
+    padding: 1rem;
 }
+
 /* header section ends here  */
 
 /* banner section starts here */
@@ -314,24 +260,21 @@ section{
 /* banner section ends here */
 
 /* about us section starts here */
-#about {
-    margin-bottom: 5rem;
-}
 
-.video-image{
+.video-image {
     width: 150px;
     position: absolute;
     bottom: 100px;
 }
 
-.btn-center-align{
+.btn-center-align {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.about-icons{
+.about-icons {
     background-color: #F5DFDC;
     color: var(--primary-color);
     height: 40px;
@@ -339,13 +282,15 @@ section{
     border-radius: 50%;
     margin-right: 16px;
 }
-.about-quote{
+
+.about-quote {
     padding: 2rem;
     margin: 2rem 0;
     background-color: #F5DFDC;
     border-left: 5px solid var(--primary-color);
     font-weight: 300;
 }
+
 /* about us section ends here */
 
 /*statistics section starts here*/
@@ -355,10 +300,11 @@ section{
     margin-bottom: 5rem;
 }
 
-.statistics-icons{
+.statistics-icons {
     font-size: 65px;
     color: var(--primary-color)
 }
+
 /*statistics section ends here*/
 
 /* about-two section starts here  */
@@ -371,18 +317,20 @@ section{
 
 /* services section starts here  */
 
-
 .card {
     background-color: #fff;
     padding: 1rem;
     text-align: center;
+    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
     /* border-bottom: 3px solid red; */
 }
-.card h3:hover{
+
+.card h3:hover {
     color: var(--primary-color);
     transition: color .3s ease-in-out;
 }
-.card:hover .link-btn{
+
+.card:hover .link-btn {
     color: var(--primary-color);
     transition: color .3s ease-in-out;
 
@@ -392,27 +340,51 @@ section{
 
 /* properties section starts here */
 
-#properties .properties-card {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
+.properties-card {
+    box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+}
+
+.properties-card .badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+.properties-card .location {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 14px;
+    color: #fff;
 }
 
 /* properties section ends here  */
 
 /* appartement section starts here  */
-#apartment {
-    margin-bottom: 5rem;
-    padding: 5rem 3rem;
+.categories {
+    flex-wrap: wrap
 }
 
-#apartment .categories {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+.categories p {
     font-size: 20px;
+    /*para*/
+    cursor: pointer;
 }
+
+.heading-2 {
+    font-size: 35px;
+}
+
+.appartment-content {
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
 
 /* appartement section ends here  */
 
@@ -443,29 +415,32 @@ section{
 
 
 /*Aminities section starts here*/
-#aminities {
-    margin-bottom: 5rem;
-    padding: 5rem 3rem;
-}
 
-#aminities .aminities-card {
+.aminities-card {
     position: relative;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 3px 6px 7px lightgray;
+    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+    margin-bottom: 1.5rem;
 }
-#aminities .aminities-card:hover {
+
+.aminities-card:hover {
     background-color: var(--primary-color);
     color: #fff;
     transition: color .3s ease-in-out;
 }
 
-#aminities .aminities-card:hover i{
+.aminities-card:hover .arrow-btn span {
     color: var(--primary-color);
     transition: color .3s ease-in-out;
 }
 
-#aminities .aminities-card .icon {
+.aminities-card:hover .arrow-btn span {
+    color: #fff;
+    transition: color .3s ease-in-out;
+}
+
+.aminities-card .icon {
     background-color: #FFF2F0;
     color: #FF5A3C;
     height: 100px;
@@ -476,11 +451,12 @@ section{
     justify-content: center;
     border-radius: 100%;
 }
-.icon i{
+
+.icon i {
     font-size: 45px;
 }
 
-.arrow-btn{
+.arrow-btn {
     position: absolute;
     bottom: -5px;
     height: 50px;
@@ -488,13 +464,14 @@ section{
     left: 50%;
     transform: translate(-50%, 50%);
     background-color: #fff;
-    box-shadow: 2px 2px 2px 2px lightgray;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.arrow-btn span i{
+
+.arrow-btn span {
     font-size: 30px;
 }
 
@@ -503,9 +480,7 @@ section{
 
 /*testimonials section starts here*/
 #testimonials {
-    margin-bottom: 5rem;
     background-color: #F8F7FC;
-    padding: 5rem 3rem;
 }
 
 #testimonials .testimonial {
@@ -528,26 +503,98 @@ section{
     overflow: hidden;
     box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
 }
-.blog-card img{
+
+.blog-card img {
     height: 300px;
 }
-.blog-card:hover img{
+
+.blog-card:hover img {
     transform: scaleX(1.2);
     transition: all .3s ease-in-out;
 }
 
 /*parallax section ends here*/
 
+/*footer section starts here*/
+footer {
+    background-color: #171B2A;
+    color: #fff;
+}
+
+.wrapper {
+    padding: 3rem 1rem;
+}
+
+.footer-links li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.footer-links li {
+    position: relative;
+    /* padding-left: 20px;  */
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links li:hover {
+    color: var(--primary-color);
+}
+
+.footer-links li::before {
+    content: "//";
+    position: absolute;
+    left: -1rem;
+    font-size: 16px;
+    color: transparent;
+    transition: color 0.3s ease-in-out, content 0.3s ease-in-out;
+}
+
+.footer-links li:hover::before {
+    content: "//";
+    color: var(--primary-color, #FF5A3C);
+}
+
+.footer-bottom {
+    background-color: #282B38;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*footer section ends here*/
+
+
+/* responsive breakpoints  */
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
     :root {
         /* headings  */
         --heading-1: 1.875rem;
-    /* --heading-3: 1.2rem; */
+        /* --heading-3: 1.2rem; */
 
     }
-    .video-image{
+
+    section {
+        margin-bottom: 6rem;
+        padding: 2rem;
+    }
+
+    .appartment-content {
+        padding: 2rem;
+    }
+
+    .video-image {
         width: 300px;
         position: absolute;
         bottom: 100px;
@@ -558,9 +605,18 @@ section{
     :root {
         /* headings  */
         --heading-1: 2.75rem;
-    --heading-3: 1.5rem;
+        --heading-3: 1.5rem;
 
     }
+
+    section {
+        margin-bottom: 6rem;
+        padding: 3rem;
+    }
+    .appartment-content {
+        padding: 3rem;
+    }
+
 
     .nav {
         display: flex;
@@ -569,38 +625,10 @@ section{
     .hamburger {
         display: none;
     }
+
+    .footer-bottom {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 1200px) {}
-
-
-
-
-
-/*footer section starts here*/
-footer {
-    background-color: #171B2A;
-    color: #fff;
-}
-
-.wrapper {
-    padding: 5rem 3rem;
-
-}
-
-.footer-bottom {
-    background-color: #282B38;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-}
-
-.footer-bottom ul {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-/*footer section ends here*/
