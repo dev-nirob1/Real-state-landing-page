@@ -34,6 +34,9 @@
     --aminities-card-shadow: 0 16px 32px 0 rgba(80, 117, 123, 0.1);
     --arrow-btn-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     --blog-card-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+
+    /* btn  */
+    --btn-padding: .625rem 1rem;
 }
 
 .body-font-family {
@@ -149,14 +152,25 @@ a {
 /* //todo font and padding to update  */
 
 /* base btn class  */
+.btn-circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+}
+
 .btn {
     position: relative;
     font-size: 1rem;
-    padding: 12px 25px;
+    padding: var(--btn-padding);
     cursor: pointer;
     overflow: hidden;
-    transition: color 0.3s ease-in-out;
     outline: none;
+    border: none;
     font-family: var(--popins-font);
 }
 
@@ -167,59 +181,20 @@ a {
 }
 
 .btn-secondary {
+    color: var(--dark-color);
     background-color: var(--light-color);
-    border: 1px solid balck;
+    border: 1px solid var(--dark-color);
 }
 
-.btn-circle {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    border: none;
-    outline: none;
-
-}
-
-.btn-primary::before {
-    background: var(--primary-color);
-}
-
-.btn-secondary::before {
-    background: var(--secondary-color);
-}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--secondary-color);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-}
-
-.btn:hover {
-    color: black;
-    border: 1px solid black;
-}
-
-.btn:hover::before {
-    transform: translateX(0);
-}
-
-.btn span {
-    position: relative;
-    z-index: 1;
-}
 
 .para-md-size {
     font-size: var(--text-20);
 }
-.line-height-1{
+
+.line-height-1 {
     line-height: 1.8;
 }
+
 .font-bold {
     font-weight: 700;
 }
@@ -542,18 +517,19 @@ section {
 .blog-card:hover img {
     transform: scaleX(1.2);
 }
+/* blogs section ends her  */
 
-/*parallax section ends here*/
 
 /*footer section starts here*/
 footer {
     font-family: var(--popins-font);
     background-color: var(--footer-bg);
     color: var(--secondary-color);
+    position: relative;
 }
 
 .wrapper {
-    padding: 3rem 1rem;
+    padding: 5rem 2rem;
 }
 
 .footer-links li:not(:last-child) {
@@ -629,6 +605,9 @@ footer {
         /* headings  */
         --heading-1: 1.875rem;
         --heading-3: 1.25rem;
+        
+    /* btn  */
+    --btn-padding: .8rem 1.25rem;
     }
 
     /* section common spacing  */
@@ -655,6 +634,9 @@ footer {
         /* headings  */
         --heading-1: 1.875rem;
         --heading-3: 1.5rem;
+        /* btn  */
+        /* btn  */
+        --btn-padding: 1rem 2.5rem;
     }
 
     /* header  */
