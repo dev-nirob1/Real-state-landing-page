@@ -5,23 +5,36 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 :root {
     --primary-color: #FF5A3C;
-    --secondary-color: #f0f;
+    --secondary-color: #fff;
+    --bg-light: #F5DFDC;
     --dark-color: #071C1F;
+    --section-bg: #F2F6F7;
     --text-light-color: #5C727D;
+    --footer-bg: #171B2A;
+    --bottom-footer-bg: #282B38;
 
     /* ---------------typography------------ */
     /* headings  */
     --heading-1: 1.5rem;
-    --heading-3: 1.2rem;
+    --heading-3: 1.125rem;
+    --popins-font: 'Poppins', sans-serif;
+    --nunito-font: "Nunito Sans", serif;
+
     /* paragraph  */
     --text-20: 1.25rem;
     --text-base: 1rem;
     --text-14: 0.875rem;
+
+    --header-shadow: 0 10px 20px 0 rgba(46, 56, 220, 0.2);
+    --services-card-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+    --properties-card-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+    --aminities-card-shadow: 0 16px 32px 0 rgba(80, 117, 123, 0.1);
+    --arrow-btn-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    --blog-card-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
 }
 
 .body-font-family {
@@ -48,7 +61,7 @@ a {
 }
 
 .white-color {
-    color: #fff
+    color: var(--secondary-color)
 }
 
 .orange-bg-color {
@@ -60,11 +73,11 @@ a {
 }
 
 .bg-light {
-    background-color: #F5DFDC;
+    background-color: var(--bg-light);
 }
 
 .section-bg {
-    background-color: #F2F6F7;
+    background-color: var(--section-bg);
 }
 
 .navlinks-color {
@@ -105,10 +118,11 @@ a {
 }
 
 .section-name {
-    background-color: #FFEEEB;
-    color: #FF5A3C;
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+    font-family: var(--popins-font);
     padding: 5px 20px;
-    border-radius: 25px;
+    border-radius: 1.5rem;
     display: inline-block;
 }
 
@@ -117,10 +131,14 @@ a {
 /* font-size  */
 .section-title {
     font-size: var(--heading-1);
+    font-family: var(--popins-font);
+    font-weight: 700;
 }
 
-.card-title {
-    font-size: var(--heading-3)
+.heading-3 {
+    font-size: var(--heading-3);
+    font-weight: 700;
+    font-family: var(--popins-font);
 }
 
 /*btn classes*/
@@ -130,16 +148,17 @@ a {
 /* base btn class  */
 .btn {
     position: relative;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 12px 25px;
     cursor: pointer;
     overflow: hidden;
-    transition: color 0.4s ease-in-out;
+    transition: color 0.3s ease-in-out;
     outline: none;
+    font-family: var(--popins-font);
 }
 
 .btn-primary {
-    color: #fff;
+    color: var(--secondary-color);
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
@@ -153,7 +172,7 @@ a {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     color: var(--primary-color);
     font-size: 1.4rem;
     border: none;
@@ -173,7 +192,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background: white;
+    background: var(--secondary-color);
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
 }
@@ -192,20 +211,25 @@ a {
     z-index: 1;
 }
 
-.para-s-size {
-    font-size: 12px;
+.para-md-size {
+    font-size: 1.25rem;
 }
 
-.para-base-size {}
+.font-bold {
+    font-weight: 700;
+}
 
-.para-md-size {}
-
-.para-lg-size {}
+.profile-rounded {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
 
 /* header section starts here  */
 header {
-    background-color: #fff;
-    box-shadow: 0 10px 20px 0 rgba(46, 56, 220, 0.2);
+    background-color: var(--secondary-color);
+    font-family: var(--popins-font);
+    box-shadow: var(--header-shadow);
 }
 
 header figure {
@@ -235,7 +259,7 @@ header nav {
 }
 
 .nav-links:hover {
-    color: #FF5A3C;
+    color: var(--primary-color);
     transition: all .3s ease-in-out;
 }
 
@@ -247,15 +271,10 @@ section {
 /* header section ends here  */
 
 /* banner section starts here */
-#banner {
-    background-color: #F2F6F7;
-    margin-bottom: 5rem;
-}
 
-
-.slider-1 {
+/* .slider-1 {
     align-items: center;
-}
+} */
 
 /* banner section ends here */
 
@@ -275,18 +294,18 @@ section {
 }
 
 .about-icons {
-    background-color: #F5DFDC;
+    background-color: var(--bg-light);
     color: var(--primary-color);
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 .about-quote {
     padding: 2rem;
     margin: 2rem 0;
-    background-color: #F5DFDC;
+    background-color: var(--bg-light);
     border-left: 5px solid var(--primary-color);
     font-weight: 300;
 }
@@ -316,12 +335,11 @@ section {
 /* about-two section ends here  */
 
 /* services section starts here  */
-
 .card {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+    box-shadow: var(--services-card-shadow);
     /* border-bottom: 3px solid red; */
 }
 
@@ -341,7 +359,7 @@ section {
 /* properties section starts here */
 
 .properties-card {
-    box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+    box-shadow: var(--properties-card-shadow)
 }
 
 .properties-card .badge {
@@ -349,7 +367,7 @@ section {
     top: 1rem;
     right: 1rem;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--secondary-color);
     font-size: 14px;
     padding: 4px 8px;
 }
@@ -358,8 +376,7 @@ section {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-    font-size: 14px;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 /* properties section ends here  */
@@ -381,7 +398,7 @@ section {
 
 .appartment-content {
     padding: 1rem;
-    color: #fff;
+    color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
@@ -420,13 +437,13 @@ section {
     position: relative;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+    box-shadow: var(--aminities-card-shadow);
     margin-bottom: 1.5rem;
 }
 
 .aminities-card:hover {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--secondary-color);
     transition: color .3s ease-in-out;
 }
 
@@ -436,7 +453,7 @@ section {
 }
 
 .aminities-card:hover .arrow-btn span {
-    color: #fff;
+    color: var(--secondary-color);
     transition: color .3s ease-in-out;
 }
 
@@ -463,8 +480,8 @@ section {
     width: 50px;
     left: 50%;
     transform: translate(-50%, 50%);
-    background-color: #fff;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    box-shadow: var(--arrow-btn-shadow);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -485,7 +502,7 @@ section {
 
 #testimonials .testimonial {
     padding: 1.5rem 1rem;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     border-radius: 5px;
     box-shadow: 10px 20px #F8F7FC;
 }
@@ -494,31 +511,29 @@ section {
 
 
 /*blogs and news section starts here*/
-#blogs {
-    margin-bottom: 5rem;
-    padding: 5rem 3rem;
-}
 
 .blog-card {
     overflow: hidden;
-    box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+    font-family: var(--nunito-font);
+    box-shadow: var(--blog-card-shadow);
 }
 
 .blog-card img {
     height: 300px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
 }
 
 .blog-card:hover img {
     transform: scaleX(1.2);
-    transition: all .3s ease-in-out;
 }
 
 /*parallax section ends here*/
 
 /*footer section starts here*/
 footer {
-    background-color: #171B2A;
-    color: #fff;
+    background-color: var(--footer-bg);
+    color: var(--secondary-color);
 }
 
 .wrapper {
@@ -554,7 +569,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #282B38;
+    background-color: var(--bottom-footer-bg);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -575,25 +590,27 @@ footer {
 
 
 /* responsive breakpoints  */
-@media (min-width: 576px) {}
+/* @media (min-width: 576px) {} */
 
 @media (min-width: 768px) {
     :root {
         /* headings  */
         --heading-1: 1.875rem;
-        /* --heading-3: 1.2rem; */
-
+        --heading-3: 1.25rem;
     }
 
+    /* section common spacing  */
     section {
         margin-bottom: 6rem;
         padding: 2rem;
     }
 
+    /* appartment section  */
     .appartment-content {
         padding: 2rem;
     }
 
+    /* about us section  */
     .video-image {
         width: 300px;
         position: absolute;
@@ -604,20 +621,11 @@ footer {
 @media (min-width: 992px) {
     :root {
         /* headings  */
-        --heading-1: 2.75rem;
+        --heading-1: 1.875rem;
         --heading-3: 1.5rem;
-
     }
 
-    section {
-        margin-bottom: 6rem;
-        padding: 3rem;
-    }
-    .appartment-content {
-        padding: 3rem;
-    }
-
-
+    /* header  */
     .nav {
         display: flex;
     }
@@ -626,9 +634,27 @@ footer {
         display: none;
     }
 
+    /* common section spacing  */
+    section {
+        margin-bottom: 6rem;
+        padding: 3rem;
+    }
+
+    /* appartments section  */
+    .appartment-content {
+        padding: 3rem;
+    }
+
+    /* footer  */
     .footer-bottom {
         flex-direction: row;
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    :root {
+        /* headings  */
+        --heading-1: 2.75rem;
+        --heading-3: 1.5rem;
+    }
+}
