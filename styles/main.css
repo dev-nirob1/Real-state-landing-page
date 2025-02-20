@@ -26,7 +26,6 @@
 
     /* paragraph  */
     --text-20: 1.25rem;
-    --text-base: 1rem;
     --text-14: 0.875rem;
 
     --header-shadow: 0 10px 20px 0 rgba(46, 56, 220, 0.2);
@@ -87,6 +86,10 @@ a {
 /* flex  */
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-col {
@@ -212,9 +215,11 @@ a {
 }
 
 .para-md-size {
-    font-size: 1.25rem;
+    font-size: var(--text-20);
 }
-
+.line-height-1{
+    line-height: 1.8;
+}
 .font-bold {
     font-weight: 700;
 }
@@ -265,12 +270,16 @@ header nav {
 
 section {
     margin-bottom: 6rem !important;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 /* header section ends here  */
 
 /* banner section starts here */
+.banner-des {
+    padding: 1rem 2rem;
+    border-right: 3px solid var(--text-light-color)
+}
 
 /* .slider-1 {
     align-items: center;
@@ -340,7 +349,14 @@ section {
     padding: 1rem;
     text-align: center;
     box-shadow: var(--services-card-shadow);
-    /* border-bottom: 3px solid red; */
+    transition: all .3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .card h3:hover {
@@ -362,29 +378,33 @@ section {
     box-shadow: var(--properties-card-shadow)
 }
 
+.icon-container .card-icon:not(:last-child) {
+    border-right: 1px solid var(--text-light-color);
+}
+
 .properties-card .badge {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
     font-size: 14px;
     padding: 4px 8px;
 }
 
-.properties-card .location {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+.properties-card .sale {
+    background-color: #54ecad;
     color: var(--secondary-color);
 }
+
+.properties-card .rent {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+;
 
 /* properties section ends here  */
 
 /* appartement section starts here  */
-.categories {
-    flex-wrap: wrap
-}
 
 .categories p {
     font-size: 20px;
@@ -439,22 +459,17 @@ section {
     border-radius: 8px;
     box-shadow: var(--aminities-card-shadow);
     margin-bottom: 1.5rem;
+    transition: all .3s ease-in-out;
 }
 
 .aminities-card:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    transition: color .3s ease-in-out;
 }
 
 .aminities-card:hover .arrow-btn span {
     color: var(--primary-color);
-    transition: color .3s ease-in-out;
-}
-
-.aminities-card:hover .arrow-btn span {
-    color: var(--secondary-color);
-    transition: color .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .aminities-card .icon {
@@ -532,6 +547,7 @@ section {
 
 /*footer section starts here*/
 footer {
+    font-family: var(--popins-font);
     background-color: var(--footer-bg);
     color: var(--secondary-color);
 }
@@ -568,6 +584,22 @@ footer {
     color: var(--primary-color, #FF5A3C);
 }
 
+.newsletter input {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    outline: none;
+    border: none;
+    border: 1px solid var(--secondary-color);
+}
+
+.footer-btn {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
 .footer-bottom {
     background-color: var(--bottom-footer-bg);
     padding: 1rem;
@@ -602,7 +634,7 @@ footer {
     /* section common spacing  */
     section {
         margin-bottom: 6rem;
-        padding: 2rem;
+        padding: 2rem 3rem;
     }
 
     /* appartment section  */
@@ -637,7 +669,7 @@ footer {
     /* common section spacing  */
     section {
         margin-bottom: 6rem;
-        padding: 3rem;
+        padding: 3rem 5rem;
     }
 
     /* appartments section  */

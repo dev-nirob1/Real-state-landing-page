@@ -11,9 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 
     <!-- google icons cdn -->
 
@@ -24,6 +26,9 @@
     <!-- css files  -->
     <link rel="stylesheet" href="./styles/grid.css">
     <link rel="stylesheet" href="./styles/main.css">
+
+    <!-- animation  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -38,6 +43,8 @@
                     menu
                 </span>
             </div>
+
+            <!-- nav items  -->
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-links" href="#">Home</a>
@@ -65,26 +72,30 @@
         <section class="section-bg">
             <div class="my-container large-2 align-center">
                 <!-- image container  -->
-                <div class="image-responsive">
+                <div class="image-responsive animate__animated" data-zems="animate__fadeInLeft">
                     <img class="image-responsive" src="./assets/21.png" alt="">
                 </div>
 
                 <!-- content container  -->
-                <div class="text-right">
-                    <p class="flex justify-end">
+                <div class="text-right font-bold ">
+                    <p class="flex align-center justify-end animate__animated" data-zems="animate__fadeInUp">
                         <span class="material-symbols-outlined orange-text-color">
                             home
                         </span>
                         Real State Agency
                     </p>
-                    <h1 class="section-title mb-1 text-dark">The Right Place <br> of House Finding</h1>
+                    <h1 class="section-title mb-1 text-dark animate__animated" data-zems="animate__fadeInUp">
+                        The Right Place <br> of House Finding
+                    </h1>
 
-                    <p class="mb-1 text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do
+                    <p class="mb-1 text-light banner-des animate__animated" data-zems="animate__fadeInUp">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do
                         eiusmod tempor
                         incididunt ut
-                        labore.</p>
-                        button container 
-                    <div class="flex align-center justify-end gap-1">
+                        labore.
+                    </p>
+                    <!-- button container  -->
+                    <div class="flex align-center justify-end gap-1 animate__animated" data-zems="animate__fadeInUp">
                         <button class="btn btn-primary">
                             <span>OUR SERVICES</span>
                         </button>
@@ -108,7 +119,9 @@
                             <img class="image-responsive" src="./assets/8.png" alt="image">
                             <!-- play btn  -->
                             <button class="btn-circle btn-center-align">
-                                <span class="material-symbols-outlined flex align-center justify-center">
+                                <span
+                                    class="material-symbols-outlined flex align-center justify-center animate__animated"
+                                    data-zems="animate__bounce">
                                     play_arrow
                                 </span></button>
                         </div>
@@ -128,7 +141,7 @@
                     </div>
                     <!-- section header div ends -->
 
-                    <p class="text-light mb-1">Over 39,000 people work for us in more than 70 countries all over the
+                    <p class="text-light mb-1 line-height-1">Over 39,000 people work for us in more than 70 countries all over the
                         This breadth of global
                         coverage, combined with specialist services</p>
 
@@ -168,7 +181,7 @@
                     <!-- icon + title container ends  -->
 
 
-                    <p class="about-quote text-light">
+                    <p class="about-quote text-light line-height-1">
                         "Enimad minim veniam quis nostrud exercitation
                         llamco laboris. Lorem ipsum dolor sit amet"
                     </p>
@@ -186,28 +199,28 @@
                         crop_square
                     </span>
                     <h1 class="section-title text-dark">560+</h1>
-                    <p class="text-light">Total Area Sq</p>
+                    <p class="text-light font-bold">Total Area Sq</p>
                 </div>
                 <div class="flex-col justify-center align-center text-center">
                     <span class="material-symbols-outlined statistics-icons">
                         apartment
                     </span>
                     <h1 class="section-title text-dark">197K+</h1>
-                    <p class="text-light">Apartments Sold</p>
+                    <p class="text-light font-bold">Apartments Sold</p>
                 </div>
                 <div class="flex-col justify-center align-center text-center">
                     <span class="material-symbols-outlined statistics-icons">
                         precision_manufacturing
                     </span>
                     <h1 class="section-title text-dark">268+</h1>
-                    <p class="text-light">Total Constructions</p>
+                    <p class="text-light font-bold">Total Constructions</p>
                 </div>
                 <div class="flex-col justify-center align-center text-center">
                     <span class="material-symbols-outlined statistics-icons">
                         chair
                     </span>
                     <h1 class="section-title text-dark">340+</h1>
-                    <p class="text-light">Apartio Rooms</p>
+                    <p class="text-light font-bold">Apartio Rooms</p>
                 </div>
             </div>
         </section>
@@ -219,23 +232,23 @@
                 <div>
                     <p class="section-name mb-1">About Us </p>
                     <h1 class="section-title mb-1 text-dark">Today Sells Properties</h1>
-                    <p class="text-light mb-1">Houzez allow you to design unlimited panels and real estate custom forms
+                    <p class="text-light mb-1 line-height-1">Houzez allow you to design unlimited panels and real estate custom forms
                         to capture leads and
                         keep record of all information</p>
-                    <ul class="text-light">
+                    <ul class="text-light line-height-1">
                         <li>Live Music Cocerts at Luviana</li>
                         <li>Our SecretIsland Boat Tour is Just for You</li>
                         <li>Live Music Cocerts at Luviana</li>
                         <li>Live Music Cocerts at Luviana</li>
                     </ul>
-                    <div class="all-4 mb-2 mt-2 text-light">
-                        <div>
+                    <div class="all-4 gap-2 my-2 text-light icon-container">
+                        <div class="card-icon">
                             <p class="flex items-center">3 <span class="material-symbols-outlined">
                                     king_bed
                                 </span> </p>
                             <p>Bedrooms</p>
                         </div>
-                        <div>
+                        <div class="card-icon">
                             <p class="flex items-center">2 <span class="material-symbols-outlined">
                                     <span class="material-symbols-outlined">
                                         bathtub
@@ -243,16 +256,16 @@
                                 </span></p>
                             <p>Bathrooms</p>
                         </div>
-                        <div>
+                        <div class="card-icon">
                             <p class="flex items-center">2 <span class="material-symbols-outlined">
                                     king_bed
                                 </span></p>
                             <p>Car parking</p>
                         </div>
-                        <div>
-                            <p class="flex items-center">335 <span class="material-symbols-outlined">
-                                    king_bed
-                                </span></p>
+                        <div class="card-icon
+                            <p class=" flex items-center">335 <span class="material-symbols-outlined">
+                                king_bed
+                            </span></p>
                             <p>square Ft</p>
                         </div>
                     </div>
@@ -283,10 +296,10 @@
                     <h1 class="section-title mb-2">Our Main Focus </h1>
                 </div>
                 <div class="all-1 medium-2 large-3 gap-2">
-                    <div style="border-bottom: 3px solid red;" class="card">
+                    <div class="card">
                         <img src="./assets/21(1).png" alt="">
                         <h3 class="heading-3 text-dark"><a href="#">Buy a home</a></h3>
-                        <p class="text-light mb-1 mt-1">
+                        <p class="text-light my-1 line-height-1">
                             over 1 million+ homes for sale available on the website, we can match you with a house you
                             will
                             want to call home.
@@ -302,7 +315,7 @@
                     <div class="card">
                         <img src="./assets/21(1).png" alt="">
                         <h3 class="heading-3 text-dark"><a href="#">Buy a home</a></h3>
-                        <p class="text-light mb-1 mt-1">
+                        <p class="text-light my-1 line-height-1">
                             over 1 million+ homes for sale available on the website, we can match you with a house you
                             will
                             want to call home.
@@ -318,7 +331,7 @@
                     <div class="card">
                         <img src="./assets/21(1).png" alt="">
                         <h3 class="heading-3 text-dark"><a href="#">Buy a home</a></h3>
-                        <p class="text-light mb-1 mt-1">
+                        <p class="text-light my-1 line-height-1">
                             over 1 million+ homes for sale available on the website, we can match you with a house you
                             will
                             want to call home.
@@ -347,154 +360,109 @@
                     <div class=" relative image-responsive">
                         <img class="image-responsive" src="./assets/4.png" alt="">
                         <div>
-                            <span class="badge">FOR RENT</span>
-                        </div>
-                        <div class="flex justify-between align-center gap-2 location">
-                            <p class="flex align-center"><span class="material-symbols-outlined">
-                                    location_on
-                                </span> Belmont Gardens, Chicago</p>
-                            <div class="flex align-center gap-1">
-                                <p class="flex align-center"><span class="material-symbols-outlined">
-                                        photo_camera
-                                    </span> 2</p>
-
-                                <p class="flex align-center"><span class="material-symbols-outlined">
-                                        theaters
-                                    </span> 2</p>
-                            </div>
+                            <span class="badge rent">FOR RENT</span>
                         </div>
                     </div>
                     <div class="text-light p-1">
                         <p class="orange-text-color"> <span class="para-md-size font-bold">$34,900</span>/Month</p>
                         <h3 class="heading-3 text-dark my-1"><a href="#">Modern Apartments</a></h3>
-                        <p>Beautiful Huge 1 Family House In Heart Of <br>
+                        <p class="line-height-1">Beautiful Huge 1 Family House In Heart Of <br>
                             Westbury. Newly Renovated With New Wood</p>
-                        <div class="all-3 gap-1 mb-1 mt-1 text-light">
-                            <div>
-                                <p class="flex items-center">3 <span class="material-symbols-outlined">
+                        <div class="all-3 gap-1 my-1 text-light icon-container">
+                            <small class="card-icon">
+                                <small class="flex items-center">3 <span class="material-symbols-outlined">
                                         king_bed
-                                    </span> </p>
-                                <p>Bedrooms</p>
-                            </div>
-                            <div>
-                                <p class="flex items-center">2 <span class="material-symbols-outlined">
+                                    </span> </small>
+                                <span>Bedrooms</span>
+                            </small>
+                            <small class="card-icon">
+                                <small class="flex items-center">2 <span class="material-symbols-outlined">
                                         <span class="material-symbols-outlined">
                                             bathtub
                                         </span>
-                                    </span></p>
-                                <p>Bathrooms</p>
-                            </div>
-                            <div>
-                                <p class="flex items-center">335 <span class="material-symbols-outlined">
+                                    </span></small>
+                                <span>Bathrooms</span>
+                            </small>
+                            <small class="card-icon">
+                                <small class="flex items-center">335 <span class="material-symbols-outlined">
                                         king_bed
-                                    </span></p>
-                                <p>square Ft</p>
-                            </div>
+                                    </span></small>
+                                <span>square Ft</span>
+                            </small>
                         </div>
                     </div>
-                    <hr>
-                </div>
-                <div class="properties-card">
-                    <div class="relative image-responsive">
-                        <img class="image-responsive" src="./assets/4.png" alt="">
-                        <div>
-                            <span class="badge">FOR RENT</span>
-                        </div>
-                        <div class="flex justify-between align-center gap-2 location">
-                            <p class="flex align-center"><span class="material-symbols-outlined">
-                                    location_on
-                                </span> Belmont Gardens, Chicago</p>
-                            <div class="flex align-center gap-1">
-                                <p class="flex align-center"><span class="material-symbols-outlined">
-                                        photo_camera
-                                    </span> 2</p>
-
-                                <p class="flex align-center"><span class="material-symbols-outlined">
-                                        theaters
-                                    </span> 2</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-light p-1">
-                        <p class="orange-text-color"> <span class="para-md-size font-bold">$34,900</span>/Month</p>
-                        <h3 class="heading-3 text-dark my-1"><a href="#">Modern Apartments</a></h3>
-                        <p>Beautiful Huge 1 Family House In Heart Of <br>
-                            Westbury. Newly Renovated With New Wood</p>
-                        <div class="all-3 gap-1 mb-1 mt-1 text-light">
-                            <div>
-                                <p class="flex items-center">3 <span class="material-symbols-outlined">
-                                        king_bed
-                                    </span> </p>
-                                <p>Bedrooms</p>
-                            </div>
-                            <div>
-                                <p class="flex items-center">2 <span class="material-symbols-outlined">
-                                        <span class="material-symbols-outlined">
-                                            bathtub
-                                        </span>
-                                    </span></p>
-                                <p>Bathrooms</p>
-                            </div>
-                            <div>
-                                <p class="flex items-center">335 <span class="material-symbols-outlined">
-                                        king_bed
-                                    </span></p>
-                                <p>square Ft</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
                 </div>
                 <div class="properties-card">
                     <div class=" relative image-responsive">
                         <img class="image-responsive" src="./assets/4.png" alt="">
                         <div>
-                            <span class="badge">FOR RENT</span>
-                        </div>
-                        <div class="flex justify-between align-center gap-2 location">
-                            <p class="flex align-center"><span class="material-symbols-outlined">
-                                    location_on
-                                </span> Belmont Gardens, Chicago</p>
-                            <div class="flex align-center gap-1">
-                                <p class="flex align-center"><span class="material-symbols-outlined">
-                                        photo_camera
-                                    </span> 2</p>
-
-                                <p class="flex align-center"><span class="material-symbols-outlined">
-                                        theaters
-                                    </span> 2</p>
-                            </div>
+                            <span class="badge sale">FOR RENT</span>
                         </div>
                     </div>
                     <div class="text-light p-1">
                         <p class="orange-text-color"> <span class="para-md-size font-bold">$34,900</span>/Month</p>
                         <h3 class="heading-3 text-dark my-1"><a href="#">Modern Apartments</a></h3>
-                        <p>Beautiful Huge 1 Family House In Heart Of <br>
+                        <p class="line-height-1">Beautiful Huge 1 Family House In Heart Of <br>
                             Westbury. Newly Renovated With New Wood</p>
-                        <div class="all-3 gap-1 my-1 text-light">
-                            <div>
-                                <p class="flex items-center">3 <span class="material-symbols-outlined">
+                        <div class="all-3 gap-1 my-1 text-light icon-container">
+                            <small class="card-icon">
+                                <small class="flex items-center">3 <span class="material-symbols-outlined">
                                         king_bed
-                                    </span> </p>
-                                <p>Bedrooms</p>
-                            </div>
-                            <div>
-                                <p class="flex items-center">2 <span class="material-symbols-outlined">
+                                    </span> </small>
+                                <span>Bedrooms</span>
+                            </small>
+                            <small class="card-icon">
+                                <small class="flex items-center">2 <span class="material-symbols-outlined">
                                         <span class="material-symbols-outlined">
                                             bathtub
                                         </span>
-                                    </span></p>
-                                <p>Bathrooms</p>
-                            </div>
-                            <div>
-                                <p class="flex items-center">335 <span class="material-symbols-outlined">
+                                    </span></small>
+                                <span>Bathrooms</span>
+                            </small>
+                            <small class="card-icon">
+                                <small class="flex items-center">335 <span class="material-symbols-outlined">
                                         king_bed
-                                    </span></p>
-                                <p>square Ft</p>
-                            </div>
+                                    </span></small>
+                                <span>square Ft</span>
+                            </small>
                         </div>
                     </div>
-                    <hr>
+                </div>
+                <div class="properties-card">
+                    <div class=" relative image-responsive">
+                        <img class="image-responsive" src="./assets/4.png" alt="">
+                        <div>
+                            <span class="badge rent">FOR RENT</span>
+                        </div>
+                    </div>
+                    <div class="text-light p-1">
+                        <p class="orange-text-color"> <span class="para-md-size font-bold">$34,900</span>/Month</p>
+                        <h3 class="heading-3 text-dark my-1"><a href="#">Modern Apartments</a></h3>
+                        <p class="line-height-1">Beautiful Huge 1 Family House In Heart Of <br>
+                            Westbury. Newly Renovated With New Wood</p>
+                        <div class="all-3 gap-1 my-1 text-light icon-container">
+                            <small class="card-icon">
+                                <small class="flex items-center">3 <span class="material-symbols-outlined">
+                                        king_bed
+                                    </span> </small>
+                                <span>Bedrooms</span>
+                            </small>
+                            <small class="card-icon">
+                                <small class="flex items-center">2 <span class="material-symbols-outlined">
+                                        <span class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                    </span></small>
+                                <span>Bathrooms</span>
+                            </small>
+                            <small class="card-icon">
+                                <small class="flex items-center">335 <span class="material-symbols-outlined">
+                                        king_bed
+                                    </span></small>
+                                <span>square Ft</span>
+                            </small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -507,7 +475,7 @@
                 <h1 class="section-title mb-2">Apartments Plan</h1>
             </div>
 
-            <div class="categories flex items-center justify-center gap-2 text-dark mb-3">
+            <div class="flex items-center flex-wrap justify-center gap-2 text-dark mb-3">
                 <p>The Studio</p>
                 <p>Deluxe Portion</p>
                 <p>Penthouse</p>
@@ -517,10 +485,10 @@
             <div class="all-1 large-2 gap-3">
                 <div class="appartment-content">
                     <h2 class="heading-2">Double Height</h2>
-                    <p class="mb-3">Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit
+                    <p class="mb-3 line-height-1">Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit
                         amet cons aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua.
                         sed ayd minim veniam.</p>
-                    <p>Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons
+                    <p class="line-height-1">Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons
                         aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua. sed ayd
                         minim veniam.</p>
                 </div>
@@ -554,7 +522,7 @@
                     <span class="icon">
                         <i class="material-icons">directions_car</i>
                     </span>
-                    <h3 class="heading-3 text-dark mb-2 mt-2">Parking Space</h3>
+                    <h3 class="heading-3 my-2">Parking Space</h3>
                     <div class="arrow-btn">
                         <span class="material-symbols-outlined">
                             arrow_right_alt
@@ -565,7 +533,7 @@
                     <span class="icon">
                         <i class="material-icons">pool</i>
                     </span>
-                    <h3 class="heading-3 text-dark mb-2 mt-2">Swimming Pool</h3>
+                    <h3 class="heading-3 my-2">Swimming Pool</h3>
                     <div class="arrow-btn">
                         <span class="material-symbols-outlined">
                             arrow_right_alt
@@ -576,7 +544,7 @@
                     <span class="icon">
                         <i class="material-icons">verified_user</i>
                     </span>
-                    <h3 class="heading-3 text-dark mb-2 mt-2">Private Security</h3>
+                    <h3 class="heading-3 my-2">Private Security</h3>
                     <div class="arrow-btn">
                         <span class="material-symbols-outlined">
                             arrow_right_alt
@@ -587,7 +555,7 @@
                     <span class="icon">
                         <i class="material-icons">house</i>
                     </span>
-                    <h3 class="heading-3 text-dark mb-2 mt-2">Medical Center</h3>
+                    <h3 class="heading-3 my-2">Medical Center</h3>
                     <div class="arrow-btn">
                         <span class="material-symbols-outlined">
                             arrow_right_alt
@@ -598,7 +566,7 @@
                     <span class="icon">
                         <i class="material-icons">menu_book</i>
                     </span>
-                    <h3 class="heading-3 text-dark mb-2 mt-2">Library Area</h3>
+                    <h3 class="heading-3 my-2">Library Area</h3>
                     <div class="arrow-btn">
                         <span class="material-symbols-outlined">
                             arrow_right_alt
@@ -609,7 +577,7 @@
                     <span class="icon">
                         <i class="material-icons">king_bed</i>
                     </span>
-                    <h3 class="heading-3 text-dark mb-2 mt-2">King Size Beds</h3>
+                    <h3 class="heading-3 my-2">King Size Beds</h3>
                     <div class="arrow-btn">
                         <span class="material-symbols-outlined">
                             arrow_right_alt
@@ -620,7 +588,7 @@
                     <span class="icon">
                         <i class="material-icons">house</i>
                     </span>
-                    <h3 class="heading-3 text-dark mb-2 mt-2">Smart Homes</h3>
+                    <h3 class="heading-3 my-2">Smart Homes</h3>
                     <div class="arrow-btn">
                         <span class="material-symbols-outlined">
                             arrow_right_alt
@@ -631,7 +599,7 @@
                     <span class="icon">
                         <i class="material-icons">tune</i>
                     </span>
-                    <h3 class="heading-3 text-dark mb-2 mt-2">Kid's Playland</h3>
+                    <h3 class="heading-3 my-2">Kid's Playland</h3>
                     <div class="arrow-btn">
                         <span class="material-symbols-outlined">
                             arrow_right_alt
@@ -707,7 +675,7 @@
                             </p>
                         </div>
                         <div class="flex align-center gap-1">
-                            <img  class="profile-rounded" src="./assets/author.jpg" alt="">
+                            <img class="profile-rounded" src="./assets/author.jpg" alt="">
                             <div>
                                 <h4 class="text-dark">Adam Josheph</h4>
                                 <p class="text-light">Selling Agent</p>
@@ -755,7 +723,7 @@
                             <a href="#">10 Brilliant Ways To Decorate Your Home</a>
                         </h3>
                         <hr>
-                        <div class="flex justify-between align-center mt-1 mb-1">
+                        <div class="flex justify-between align-center my-1">
                             <div class="flex items-center">
                                 <span class="material-symbols-outlined orange-text-color">
                                     calendar_month
@@ -790,7 +758,7 @@
                             <a href="#">10 Brilliant Ways To Decorate Your Home</a>
                         </h3>
                         <hr>
-                        <div class="flex justify-between align-center mt-1 mb-1">
+                        <div class="flex justify-between align-center my-1">
                             <div class="flex items-center">
                                 <span class="material-symbols-outlined orange-text-color">
                                     calendar_month
@@ -825,7 +793,7 @@
                             <a href="#">10 Brilliant Ways To Decorate Your Home</a>
                         </h3>
                         <hr>
-                        <div class="flex justify-between align-center mt-1 mb-1">
+                        <div class="flex justify-between align-center my-1">
                             <div class="flex items-center">
                                 <span class="material-symbols-outlined orange-text-color">
                                     calendar_month
@@ -856,7 +824,7 @@
         <div class="small-2 medium-2 larger-5 wrapper gap-1">
 
             <!-- contact info -->
-            <div>
+            <div class="body-font-family">
                 <img class="mb-1" src="./assets/logo-2 (1).png" alt="logo">
                 <p class="mb-1">Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy
                     text of the
@@ -882,7 +850,7 @@
             <!-- contact info ends  -->
 
             <!-- company with links -->
-            <div>
+            <div class="mb-2">
                 <h3 class="heading-3 mb-1">Company</h3>
                 <ul class="footer-links">
                     <li><a href="#">About</a></li>
@@ -893,7 +861,7 @@
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="mb-2">
                 <h3 class="heading-3 mb-1">Services</h3>
                 <ul class="footer-links">
                     <li><a href="#">Order tracking</a></li>
@@ -904,7 +872,7 @@
                     <li><a href="#">Promotional Offers</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="mb-2">
                 <h3 class="heading-3 mb-1">Customer care</h3>
                 <ul class="footer-links">
                     <li><a href="#">Login</a></li>
@@ -915,23 +883,23 @@
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </div>
-            <div>
-                <div>
-                    <h3 class="heading-3 mb-1">NewsLetter</h3>
-                    <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
+            <div class="mb-2">
+                <div class="newsletter mb-1">
+                    <h3 class="heading-3">NewsLetter</h3>
+                    <p class="my-1">Subscribe to our weekly Newsletter and receive updates via email.</p>
                     <div class="flex items-center">
-                        <input type="text">
-                        <button>Send</button>
+                        <input type="text" placeholder="Email">
+                        <button class="footer-btn">Send</button>
                     </div>
                 </div>
                 <div>
-                    <h3>We Accept</h3>
+                    <h3 class="mb-1">We Accept</h3>
                     <img class="image-responsive" src="./assets/payment-4.png" alt="payment image">
                 </div>
             </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-bottom body-font-family">
             <p>All Rights Reserved @ Company 2025</p>
             <ul>
                 <li>
