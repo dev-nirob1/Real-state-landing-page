@@ -311,6 +311,7 @@ header nav {
 }
 .icon-container .card-icon:not(:last-child) {
     border-right: 1px solid var(--text-light-color);
+    padding: 6px;
 }
 .properties-card .badge {
     position: absolute;
