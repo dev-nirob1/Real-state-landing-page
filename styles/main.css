@@ -25,10 +25,11 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+body{
     font-family: var(--nunito-font);
     line-height: 1.8;
 }
-
 :root {
     --primary-color: #FF5A3C;
     --secondary-color: #fff;
@@ -54,6 +55,7 @@
     --aminities-card-shadow: 0px 0px 6px 4px rgba(153, 178, 182, 0.1);
     --arrow-btn-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     --blog-card-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+    --testimonials-card-shadow: 
     /* btn  */
     --btn-padding: .625rem 1rem;
     /* spacing  */
@@ -341,7 +343,7 @@ header nav ul li{
 header nav ul li a{
     padding: var(--nav-links-padding);
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 header nav ul li a:hover {
     color: var(--primary-color);
@@ -436,7 +438,7 @@ header nav ul li a:hover {
 
 /*----------------------- properties section starts here-------------------- */
 .properties-card {
-    box-shadow: var(--properties-card-shadow)
+    box-shadow: var(--properties-card-shadow);
 }
 
 .icon-container .card-icon:not(:last-child) {
@@ -562,6 +564,7 @@ header nav ul li a:hover {
     padding: 1.5rem 1rem;
     background-color: var(--secondary-color);
     border-radius: 5px;
+    box-shadow: var(--testimonials-card-shadow);
 }
 
 /*---------------------------testimonials section ends here-----------------------------*/
