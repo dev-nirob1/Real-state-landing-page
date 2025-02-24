@@ -45,7 +45,7 @@ body {
     /* headings  */
     --heading-1: 1.5rem;
     --heading-2: 1.25rem;
-    --heading-3: 1.125rem;
+    --heading-4: 1.125rem;
     --popins-font: 'Poppins', sans-serif;
     --nunito-font: "Nunito Sans", serif;
     /* paragraph  */
@@ -85,6 +85,12 @@ h4,
 h5,
 h6 {
     font-family: var(--popins-font);
+}
+
+.material-symbols-outlined{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* //------------------utility classes starts here-------------- */
@@ -159,21 +165,23 @@ a {
     justify-content: end;
 }
 
-.section-name {
+.sub-title {
     background-color: var(--bg-light);
     color: var(--primary-color);
     font-family: var(--popins-font);
     padding: var(--section-name-padding);
     border-radius: 1.5rem;
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
 /*--------------- typography ------------- */
 /* font-size  */
-.section-title {
+.title {
     font-size: var(--heading-1);
     font-family: var(--popins-font);
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .heading-2 {
@@ -182,8 +190,8 @@ a {
     font-family: var(--popins-font);
 }
 
-.heading-3 {
-    font-size: var(--heading-3);
+.heading-4 {
+    font-size: var(--heading-4);
     font-family: var(--popins-font);
 }
 
@@ -716,7 +724,7 @@ footer {
         /* headings  */
         --heading-1: 1.875rem;
         --heading-2: 1.5rem;
-        --heading-3: 1.25rem;
+        --heading-4: 1.25rem;
         /* btn  */
         --btn-padding: .8rem 1.25rem;
         /* --footer-wrapper: 6rem 2rem 2rem 2rem; */
@@ -740,7 +748,7 @@ footer {
         --heading-1: 2rem;
         --heading-2: 1.8rem;
 
-        --heading-3: 1.5rem;
+        --heading-4: 1.5rem;
         /* btn  */
         /* btn  */
         --btn-padding: 1rem 2.5rem;
@@ -775,6 +783,6 @@ footer {
         /* headings  */
         --heading-1: 2.75rem;
         --heading-1: 2.25rem;
-        --heading-3: 1.5rem;
+        --heading-4: 1.5rem;
     }
 }
