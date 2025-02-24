@@ -460,6 +460,10 @@ header nav ul li a:hover {
 .properties-card {
     box-shadow: var(--properties-card-shadow);
 }
+.icon-container{
+color: var(--light-color);
+margin: 1rem 0;
+}
 
 .icon-container .card-icon:not(:last-child) {
     border-right: 1px solid var(--text-light-color);
