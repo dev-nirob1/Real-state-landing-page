@@ -113,7 +113,7 @@ a {
 }
 
 .bg-dark {
-    background-color: var(--section-bg);
+    background-color: var(--bg-dark);
 }
 
 /* flex  */
