@@ -19,17 +19,19 @@
 ===================================================================
 /* reset styles  */
 
-*{
-    margin : 0;
+* {
+    margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: var(--nunito-font);
     line-height: 1.8;
 }
+
 :root {
     --primary-color: #FF5A3C;
     --secondary-color: #fff;
@@ -55,9 +57,9 @@ body{
     --aminities-card-shadow: 0px 0px 6px 4px rgba(153, 178, 182, 0.1);
     --arrow-btn-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     --blog-card-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
-    --testimonials-card-shadow: 
-    /* btn  */
-    --btn-padding: .625rem 1rem;
+    --testimonials-card-shadow:
+        /* btn  */
+        --btn-padding: .625rem 1rem;
     /* spacing  */
     --section-name-padding: 5px 20px;
     --btn-font-size: 1rem;
@@ -75,7 +77,13 @@ section {
     margin-bottom: var(--section-bottom-gap) !important;
     padding: var(--section-padding);
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--popins-font);
 }
 
@@ -337,18 +345,22 @@ header figure {
 header nav {
     padding: var(--nav-items-padding);
 }
-header nav ul li{
+
+header nav ul li {
     margin-right: 1rem;
 }
-header nav ul li a{
+
+header nav ul li a {
     padding: var(--nav-links-padding);
     font-size: 1.125rem;
     font-weight: 500;
 }
+
 header nav ul li a:hover {
     color: var(--primary-color);
     transition: all .3s ease-in-out;
 }
+
 .nav {
     display: none;
 }
