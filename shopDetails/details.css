@@ -27,7 +27,11 @@ textarea {
     height: 70px;
     width: 100%;
 }
-.star span {
+.stars{
+    display: flex;
+    align-items: center;
+}
+.stars span {
     font-size: 1rem;
     color: rgb(253, 161, 14);
 }
