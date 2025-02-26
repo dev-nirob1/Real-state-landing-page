@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>About us</title>
     <!-- google fonts  -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -17,16 +17,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/grid.css">
-    <link rel="stylesheet" href="./../styles/main.css">
-    <link rel="stylesheet" href="./contact.css">
 </head>
 
 <body>
-    <!-- header section starts -->
+    <!-- header starts here  -->
     <header>
-        <nav class="container flex justify-between align-center">
+        <nav class="container flex justify-between align-center text-light">
             <figure>
                 <img src="../assets/logo-header.png" alt="logo">
             </figure>
@@ -38,10 +36,10 @@
             <!-- nav items  -->
             <ul class="nav">
                 <li>
-                    <a href="./../index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./../about-us/about.html">About</a>
+                    <a href="./about.html">About</a>
                 </li>
                 <li>
                     <a href="#">Project</a>
@@ -58,101 +56,129 @@
             </ul>
         </nav>
     </header>
-    <!-- header section ends -->
-    <!-- page title  -->
-    <div class="bg-dark">
-        <div class="container p-2">
-            <h3 class="title">Contact Us</h3>
-            <p class="text-light">House - 24, Road - 01</p>
-        </div>
-    </div>
-    <!-- page title ends -->
+    <!-- header ends here  -->
 
-    <!-- contact address section  -->
+    <!-- about-us section starts -->
     <section class="container">
-        <div class="medium-2 large-3 gap-2">
-            <div class="address-item">
-                <img src="../assets/envelop.png" alt="envelop">
-                <h4 class="heading-4">Email Address</h4>
-                <p>info@webmail.com</p>
-                <p>jobs@webexample.com</p>
+        <div class="large-2 align-center gap-2">
+            <!-- image div  -->
+            <div class="image-responsive relative">
+                <img class="image-responsive" src="../assets/about-us-1.png" alt="image">
+                <div class="video-image">
+                    <div class="image-responsive relative">
+                        <img class="image-responsive" src="../assets/about-us-2.png" alt="image">
+                        <!-- play btn  -->
+                        <button class="btn-circle btn-center-align">
+                            <span class="material-symbols-outlined">
+                                play_arrow
+                            </span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="address-item">
-                <img src="../assets/envelop.png" alt="envelop">
-                <h4 class="heading-4">Email Address</h4>
-                <p>info@webmail.com</p>
-                <p>jobs@webexample.com</p>
-            </div>
-            <div class="address-item">
-                <img src="../assets/envelop.png" alt="envelop">
-                <h4 class="heading-4">Email Address</h4>
-                <p>info@webmail.com</p>
-                <p>jobs@webexample.com</p>
+            <!-- wrapper div for content  -->
+            <div>
+                <!-- section header div starts -->
+                <div>
+                    <h5 class="sub-title">
+                        About Us
+                    </h5>
+                    <h3 class="title text-dark">
+                        The Leading Real Estate Rental Marketplace.
+                    </h3>
+                </div>
+                <!-- section header div ends -->
+                <p class="text-light mb-1">Over 39,000 people work for us in more than 70 countries
+                    all over the
+                    This breadth of global
+                    coverage, combined with specialist services
+                </p>
+                <!-- icon + title container  -->
+                <div class="all-2 align-center text-light">
+                    <div class="flex align-center mb-1">
+                        <span class="material-symbols-outlined about-icons">
+                            home
+                        </span>
+                        <p>Smart Home Design</p>
+                    </div>
+                    <div class="flex align-center">
+                        <span class="material-symbols-outlined about-icons">
+                            landscape_2
+                        </span>
+                        <p>Beautiful Scene Around</p>
+                    </div>
+                    <div class="flex align-center mb-1">
+                        <span class="material-symbols-outlined about-icons">
+                            heart_plus
+                        </span>
+                        <p>Exceptional Lifestyle</p>
+                    </div>
+                    <div class="flex align-center">
+                        <span class="material-symbols-outlined about-icons">
+                            encrypted_add
+                        </span>
+                        <p>Complete 24/7 Security</p>
+                    </div>
+                </div>
+                <!-- icon + title container ends  -->
+                <p class="about-quote text-light">
+                    "Enimad minim veniam quis nostrud exercitation
+                    llamco laboris. Lorem ipsum dolor sit amet"
+                </p>
+                <button class="btn btn-primary">OUR SERVICES</button>
             </div>
         </div>
     </section>
-    <!-- contact address section  -->
+    <!-- about-us section ends -->
 
-    <!-- form with map section  -->
-    <div style="margin-bottom:600px;" class="contact-form-map">
-        <section class="container contact-form">
-            <h4 class="heading-4 mb-1">Get A Quote</h4>
-            <form>
-                <div class="medium-2 gap-2">
-                    <div>
-                        <label for="name"></label>
-                        <input id="name" type="text" placeholder="Enter Your Name">
+    <!-- stats section starts -->
+    <div>
+        <div class="large-2 gap-1">
+            <!-- image container  -->
+            <div>
+                <img class="image-responsive" src="../assets/about-4.jpg" alt="">
+            </div>
+
+            <div style="width: 100%; height: 100%;" class="bg-dark">
+                <div style="height:100%;" class="small-2 larger-4 align-center justify-center gap-1 text-center">
+                    <!-- individual stats component  -->
+                    <div class="flex-col justify-center align-center text-center">
+                        <span class="material-symbols-outlined statistics-icons">
+                            crop_square
+                        </span>
+                        <h3 class="title">560+</h3>
+                        <p class="text-light font-bold">Total Area Sq</p>
                     </div>
-                    <div>
-                        <label for="email"></label>
-                        <input id="email" type="email" placeholder="Enter Your Email">
+                    <div class="flex-col justify-center align-center text-center">
+                        <span class="material-symbols-outlined statistics-icons">
+                            apartment
+                        </span>
+                        <h3 class="title">197K+</h3>
+                        <p class="text-light font-bold">Apartments Sold</p>
                     </div>
-                    <div>
-                        <label for="services"></label>
-                        <select id="services">
-                            <option value="Select Service Type" selected disabled>Select Service Type</option>
-                            <option value="Property Management">Property Management</option>
-                            <option value="Mortgage Service">Mortgage Service</option>
-                            <option value="Consulting Service">Consulting Service</option>
-                        </select>
+                    <div class="flex-col justify-center align-center text-center">
+                        <span class="material-symbols-outlined statistics-icons">
+                            precision_manufacturing
+                        </span>
+                        <h3 class="title">268+</h3>
+                        <p class="text-light font-bold">Total Constructions</p>
                     </div>
-                    <div>
-                        <label for="phone"></label>
-                        <input type="tel" id="phone" placeholder="Enter Your Phone Number">
+                    <div class="flex-col justify-center align-center text-center">
+                        <span class="material-symbols-outlined statistics-icons">
+                            chair
+                        </span>
+                        <h3 class="title">340+</h3>
+                        <p class="text-light font-bold">Apartio Rooms</p>
                     </div>
                 </div>
-                <div class="my-2">
-                    <label for="message"></label>
-                    <textarea rows="6" id="message" placeholder="Enter Message..."></textarea>
-                </div>
-                <div class="flex">
-                    <div>
-                        <label for="checkbox"></label>
-                        <input type="checkbox" id="checkbox">
-                    </div>
-                    <p> Save my name, email, and website in this browser for the next time I comment.
-                    </p>
-                </div>
-                <button class="btn btn-primary mt-2">GET A FREE SERVICE</button>
-            </form>
-        </section>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb
-                =!1m18!1m12!1m3!1d4291.745453141256!2d
-                77.39914006293347!3d28.504393188935435!
-                2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
-                !3m3!1m2!1s0x390ce626851f7009%3A0x62118
-                5133cfd1ad1!2sGeeksforGeeks%20%7C%20
-                Coding%20Classes%20%7C%20Noida!5e0!3m2!1
-                sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0; width: 100%;"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            </div>
         </div>
     </div>
-    <!-- form with map section  -->
+    <!-- stats section ends -->
 
-     <!-- call to action section  -->
-     <div class="cta-wrapper">
+
+    <!-- call to action section  -->
+    <div class="cta-wrapper">
         <div class="call-to-action">
             <div class="cta flex align-center flex items-center justify-between">
                 <div class="">
@@ -262,6 +288,8 @@
         </div>
     </footer>
     <!-- footer ends here  -->
+
+
 </body>
 
 </html>

@@ -436,7 +436,7 @@
 }
 
 /* Background  */
-.bg-primary {
+/* .bg-primary {
 	background-color: var(--primary-color);
 }
 
@@ -450,7 +450,7 @@
 
 .bg-dark {
 	background-color: var(--dark-color);
-}
+} */
 
 .d-block {
 	display: block !important;
