@@ -1,0 +1,27 @@
+.address-item {
+    padding: 2rem;
+    border: 1px solid var(--dark-color);
+    text-align: center;
+    font-family: var(--nunito-font);
+}
+
+.contact-form {
+    padding: 2rem 3rem;
+    border: 1px solid;
+}
+
+.contact-form form input, select, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid;
+}
+.contact-form form select option{
+    display: block;
+    padding: 10px; /* Add padding to the options */
+    background-color: white; /* Set background color */
+    color: black;
+}
+option:hover {
+    background-color: grey; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+    <!-- header section starts -->
+    <header>
+        <nav class="container flex justify-between align-center">
+            <figure>
+                <img src="../assets/logo (1).png" alt="logo">
+            </figure>
+            <div class="hamburger">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+            <!-- nav items  -->
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Project</a>
+                </li>
+                <li>
+                    <a href="#">Gallary</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section ends -->
+    <!-- page title  -->
+    <div class="bg-dark">
+        <div class="container p-2">
+            <h3 class="title">Contact Us</h3>
+            <p class="text-light">House - 24, Road - 01</p>
+        </div>
+    </div>
+    <!-- page title  -->
+
+    <section class="container">
+        <div class="medium-2 large-3 gap-2">
+            <div class="address-item">
+                <img src="../assets/envelop.png" alt="envelop">
+                <h4 class="heading-4">Email Address</h4>
+                <p>info@webmail.com</p>
+                <p>jobs@webexample.com</p>
+            </div>
+            <div class="address-item">
+                <img src="../assets/envelop.png" alt="envelop">
+                <h4 class="heading-4">Email Address</h4>
+                <p>info@webmail.com</p>
+                <p>jobs@webexample.com</p>
+            </div>
+            <div class="address-item">
+                <img src="../assets/envelop.png" alt="envelop">
+                <h4 class="heading-4">Email Address</h4>
+                <p>info@webmail.com</p>
+                <p>jobs@webexample.com</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="contact-form">
+            <h4 class="heading-4 mb-1">Get A Quote</h4>
+            <form>
+                <div class="medium-2 gap-2">
+                    <div>
+                        <label for="name"></label>
+                        <input id="name" type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input id="email" type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div>
+                        <label for="services"></label>
+                        <select id="services">
+                            <option value="Select Service Type" selected disabled>Select Service Type</option>
+                            <option value="Property Management">Property Management</option>
+                            <option value="Mortgage Service">Mortgage Service</option>
+                            <option value="Consulting Service">Consulting Service</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="phone"></label>
+                        <input type="tel" id="phone" placeholder="Enter Your Phone Number">
+                    </div>
+                </div>
+                <div class="my-2">
+                    <label for="message"></label>
+                    <textarea rows="6" id="message" placeholder="Enter Message..."></textarea>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for="checkbox"></label>
+                        <input type="checkbox" id="checkbox">
+                    </div>
+                    <p> Save my name, email, and website in this browser for the next time I comment.
+                    </p>
+                </div>
+                <button class="btn btn-primary mt-2">GET A FREE SERVICE</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
