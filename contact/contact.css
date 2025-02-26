@@ -1,27 +1,44 @@
 .address-item {
     padding: 2rem;
-    border: 1px solid var(--dark-color);
+    border: 1px solid var(--text-light-color);
     text-align: center;
     font-family: var(--nunito-font);
 }
-
-.contact-form {
-    padding: 2rem 3rem;
-    border: 1px solid;
+.address-item p {
+    font-family: var(--nunito-font);
+    color: var(--text-light-color);
 }
-
-.contact-form form input, select, textarea {
+.contact-form {
+    padding: 2rem;
+    margin: 0 1rem;
+    border: 1px solid;
+    background-color: var(--secondary-color);
+    z-index: 999;
+}
+.contact-form form input,
+select,
+textarea {
     width: 100%;
     padding: 20px;
     border: 2px solid;
 }
-.contact-form form select option{
-    display: block;
-    padding: 10px; /* Add padding to the options */
-    background-color: white; /* Set background color */
-    color: black;
+.contact-form-map {
+    position: relative;
 }
-option:hover {
-    background-color: grey; /* Change background color on hover */
-    color: white; /* Change text color on hover */
+.map {
+    position: absolute;
+    width: 100%;
+    bottom: -400px;
+    z-index: -1;
+}
+
+@media (min-width: 992px) {
+    .contact-form {
+        padding: 2rem;
+        margin: 0 auto;
+        border: 1px solid;
+        background-color: var(--secondary-color);
+        z-index: 999;
+
+    }
 }
