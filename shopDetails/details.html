@@ -24,45 +24,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../shopDetails/details.css">
     <style>
-        .swiper {
-            height: 80vh;
-            width: 100%;
-        }
 
-        .swiper-slide:hover img {
-            transform: scale(1.1);
-        }
-
-        .swiper-slide img {
-            transition: all .4s ease-in-out;
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-button-next,
-        .swiper-button-prev {
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-            color: var(--secondary-color);
-            background-color: rgb(from var(--primary-color) r g b/ 80%);
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-        }
-
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-            font-size: 1.5rem !important;
-        }
-
-        .swiper:hover .swiper-button-next,
-        .swiper:hover .swiper-button-prev {
-            opacity: 1;
-            visibility: visible;
-
-        }
-      
     </style>
 </head>
 
@@ -107,7 +69,9 @@
     <div class="bg-dark">
         <div class="container p-2">
             <h3 class="title">Scion Hasnat Villa</h3>
-            <p class="text-light">House - 24, Road - 01</p>
+            <p class="flex align-center text-light font-bold"><span class="material-symbols-outlined orange-text-color">
+                    home
+                </span>House - 24, Road - 01</p>
         </div>
     </div>
     <!-- page title  -->
@@ -132,11 +96,11 @@
     </div>
     <!-- slider section  -->
 
-    <div class="p-3 large-3 gap-2 container">
+    <div class="details-container large-3 justify-center container">
         <div class="details span-2">
             <!-- property features  -->
-            <div class="small-2 large-3 larger-4 gap-2 mb-3">
-                <div class="flex align-center gap-1 property-feature">
+            <div class="small-2 large-3 larger-4 gap-2">
+                <div class="property-feature">
                     <span class="material-symbols-outlined">
                         fit_screen
                     </span>
@@ -145,7 +109,7 @@
                         <p>3.5</p>
                     </div>
                 </div>
-                <div class="flex align-center gap-1 property-feature">
+                <div class="property-feature">
                     <span class="material-symbols-outlined">
                         tile_small
                     </span>
@@ -154,7 +118,7 @@
                         <p>1628</p>
                     </div>
                 </div>
-                <div class="flex align-center gap-1 property-feature">
+                <div class="property-feature">
                     <span class="material-symbols-outlined">
                         apartment
                     </span>
@@ -163,7 +127,7 @@
                         <p>G + 7</p>
                     </div>
                 </div>
-                <div class="flex align-center gap-1 property-feature">
+                <div class="property-feature">
                     <span class="material-symbols-outlined">
                         explore
                     </span>
@@ -172,7 +136,7 @@
                         <p>North</p>
                     </div>
                 </div>
-                <div class="flex align-center gap-1 property-feature">
+                <div class="property-feature">
                     <span class="material-symbols-outlined">
                         directions_car
                     </span>
@@ -181,7 +145,7 @@
                         <p>6 Cars</p>
                     </div>
                 </div>
-                <div class="flex align-center gap-1 property-feature">
+                <div class="property-feature">
                     <span class="material-symbols-outlined">
                         elevator
                     </span>
@@ -190,7 +154,7 @@
                         <p>Yes</p>
                     </div>
                 </div>
-                <div class="flex align-center gap-1 property-feature">
+                <div class="property-feature">
                     <span class="material-symbols-outlined">
                         energy
                     </span>
@@ -199,7 +163,7 @@
                         <p>Yes</p>
                     </div>
                 </div>
-                <div class="flex align-center gap-1 property-feature">
+                <div class="property-feature">
                     <span class="material-symbols-outlined">
                         videocam
                     </span>
@@ -210,8 +174,8 @@
                 </div>
             </div>
             <!-- property details  -->
-            <div class="mb-3 text-light">
-                <h3 class="title text-dark">Property Detail</h3>
+            <div class="text-light">
+                <h4 class="heading">Property Detail</h4>
                 <p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem
                     Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -221,8 +185,8 @@
                     a galley of type and scrambled</p>
             </div>
             <!-- gallary  -->
-            <div class="mb-3">
-                <h3 class="title">From Our Gellary</h3>
+            <div>
+                <h4 class="heading">From Our Gellary</h4>
                 <div class="all-2 gap-2">
                     <div class="image-responsive">
                         <img class="image-responsive" src="../assets/about-3.jpg" alt="">
@@ -235,9 +199,9 @@
                     </div>
                 </div>
             </div>
-            <!-- tab  -->
-            <div class="mb-3">
-                <h3 class="title">Floor Plans</h3>
+            <!-- floor pland tab  -->
+            <div>
+                <h4 class="heading">Floor Plans</h4>
                 <div class="flex align-center flex-wrap para-md-size font-bold text-light gap-1 mb-4">
                     <p>First Floor</p>
                     <p>Second Floor</p>
@@ -257,11 +221,9 @@
                 </div>
             </div>
             <!-- property video  -->
-            <div class="mb-3">
-                <h3 class="title">Property Video</h3>
-                <div
-                    style="background-image: url('../assets/about-4.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh; position: relative">
-
+            <div>
+                <h4 class="heading">Property Video</h4>
+                <div class="video-bg-image">
                     <button class="btn-circle btn-center-align">
                         <span class="material-symbols-outlined">
                             play_arrow
@@ -270,9 +232,9 @@
                 </div>
             </div>
 
-            <!-- property video  -->
-            <div class="mb-3">
-                <h3 class="title">Property Video</h3>
+            <!-- map  -->
+            <div>
+                <h4 class="heading">Location</h4>
                 <iframe src="https://www.google.com/maps/embed?pb
                 =!1m18!1m12!1m3!1d4291.745453141256!2d
                 77.39914006293347!3d28.504393188935435!
@@ -284,20 +246,24 @@
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-
             <!-- related properties  -->
-            <div class="mb-3">
-                <h3 class="title">Related Properties</h3>
+            <div>
+                <h4 class="heading">Related Properties</h4>
                 <div class="medium-2 gap-2">
                     <div class="properties-card">
-                        <div class=" relative image-responsive">
+                        <div class="relative image-responsive">
                             <img class="image-responsive" src="../assets/about-3.jpg" alt="">
                         </div>
                         <div class="text-light p-1">
-                            <span>FOR RENT</span>
-                            <h4 class="heading-4 text-dark my-1"><a href="#">Modern Apartments</a></h4>
-                            <a href="">location</a>
-                            <div class="all-3 gap-1 my-1 text-light icon-container">
+                            <span class="orange-text-color">FOR RENT</span>
+                            <h4 class="heading-4 my-1"><a href="#">Modern Apartments</a></h4>
+                            <a class="flex mb-1" href="#">
+                                <span class="material-symbols-outlined location-icon">
+                                    location_on
+                                </span>
+                                <small>Brooklyn, New York, United States</small>
+                            </a>
+                            <div class="all-3 gap-1">
                                 <p class="flex">
                                     <span class="flex items-center">3 </span>
                                     <span> Bedrooms</span>
@@ -314,15 +280,21 @@
                         </div>
                     </div>
                     <div class="properties-card">
-                        <div class=" relative image-responsive">
+                        <div class="relative image-responsive">
                             <img class="image-responsive" src="../assets/about-5.jpg" alt="">
                         </div>
                         <div class="text-light p-1">
                             <div>
-                                <span>FOR RENT</span>
+                                <span class="orange-text-color">FOR RENT</span>
                             </div>
                             <h4 class="heading-4 text-dark my-1"><a href="#">Modern Apartments</a></h4>
-                            <div class="all-3 gap-1 my-1 text-light icon-container">
+                            <a class="flex mb-1" href="#">
+                                <span class="material-symbols-outlined location-icon">
+                                    location_on
+                                </span>
+                                <small>Brooklyn, New York, United States</small>
+                            </a>
+                            <div class="all-3 gap-1">
                                 <p class="flex">
                                     <span class="flex items-center">3 </span>
                                     <span> Bedrooms</span>
@@ -344,8 +316,8 @@
         <!-- right side box  -->
         <aside class="sidebar">
             <!-- form  -->
-            <div class="p-2 mb-3 border">
-                <h4 class="heading-4 mb-1">Drop Messege For Book</h4>
+            <div>
+                <h4 class="heading">Drop Messege For Book</h4>
                 <form>
                     <label for="name"></label>
                     <input type="text" id="name" placeholder="Your Name*">
@@ -357,8 +329,8 @@
                 </form>
             </div>
             <!-- top rated products  -->
-            <div class="p-2 mb-3 border">
-                <h4 class="heading-4 mb-2">Top Rated Product</h4>
+            <div>
+                <h4 class="heading">Top Rated Product</h4>
                 <!-- card  -->
                 <div class="all-3 gap-1">
                     <a href="#">
@@ -427,9 +399,10 @@
                     </div>
                 </div>
             </div>
+
             <!-- Social media links  -->
-            <div class="p-2 mb-3 border">
-                <h4 class="heading-4 mb-1">Follow us</h4>
+            <div>
+                <h4 class="heading">Follow us</h4>
                 <div class="flex gap-1 items-center social-link">
                     <a href="#">
                         <span class="material-symbols-outlined">book</span>
@@ -556,23 +529,7 @@
     </footer>
     <!-- footer ends here  -->
 
-    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            loop: true,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
-        });
-    </script>
     </body>
 
 </html>
