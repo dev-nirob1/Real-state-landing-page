@@ -1,19 +1,26 @@
+#contact-address, #contact-form {
+    margin-bottom: 0 !important;
+}
+
 .address-item {
     padding: 2rem;
     border: 1px solid var(--border-color);
     text-align: center;
     font-family: var(--nunito-font);
 }
+
 .address-item p {
     font-family: var(--nunito-font);
     color: var(--text-light-color);
 }
+
 .contact-form {
     padding: 1rem;
     border: 1px solid var(--border-color);
     background-color: var(--secondary-color);
     z-index: 999;
 }
+
 .contact-form form input,
 select,
 textarea {
