@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Projets</title>
     <!-- google fonts  -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -12,21 +12,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <!-- google icons cdn -->
 
+    <!-- google icons cdn -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
+    <!-- styles -->
     <link rel="stylesheet" href="../styles/grid.css">
-    <link rel="stylesheet" href="./../styles/main.css">
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="./projects.css">
 </head>
 
 <body>
     <!-- header section starts -->
     <header>
-        <nav class="container flex justify-between align-center">
+        <nav class="container flex justify-between align-center text-light">
             <figure>
                 <img src="../assets/logo-header.png" alt="logo">
             </figure>
@@ -41,13 +43,13 @@
                     <a href="./../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./../about-us/about.html">About</a>
+                    <a href="../about-us/about.html">About</a>
                 </li>
                 <li>
                     <a href="#">Project</a>
                 </li>
                 <li>
-                    <a href="#">Gallary</a>
+                    <a href="./gallery.html">Gallary</a>
                 </li>
                 <li>
                     <a href="../contact/contact.html">Contact</a>
@@ -70,99 +72,51 @@
                 </span> <span>Contact Us</span></p>
         </div>
     </div>
-    <!-- page title ends -->
 
-    <!-- contact address section  -->
-    <div id="contact-address" class="container">
+    <div class="tab-panel-container container medium-2 large-3 px-3">
+        <ul class="span-2 flex gap-1 mt-2 tab-panel mb-1">
+            <li><a class="active" href="#">All</a></li>
+            <li><a href="#">ONGoing</a></li>
+            <li><a href="#">Completed</a></li>
+            <li><a href="#">Upcoming</a></li>
+        </ul>
+        <div class="dropdown-container flex align-center mt-1">
+            <label for="location">Location</label>
+            <select name="location" id="location">
+                <option value="Please Select" selected disabled>Please Select</option>
+                <option value="'Dhaka">Dhaka</option>
+            </select>
+        </div>
+    </div>
+    <section id="properties">
         <div class="medium-2 large-3 gap-2">
-            <div class="address-item">
-                <img src="../assets/envelop.png" alt="envelop">
-                <h4 class="heading-4">Email Address</h4>
-                <p>info@webmail.com</p>
-                <p>jobs@webexample.com</p>
-            </div>
-            <div class="address-item">
-                <img src="../assets/envelop.png" alt="envelop">
-                <h4 class="heading-4">Email Address</h4>
-                <p>info@webmail.com</p>
-                <p>jobs@webexample.com</p>
-            </div>
-            <div class="address-item">
-                <img src="../assets/envelop.png" alt="envelop">
-                <h4 class="heading-4">Email Address</h4>
-                <p>info@webmail.com</p>
-                <p>jobs@webexample.com</p>
+            <div class="properties-card">
+                <div class="relative image-responsive">
+                    <img class="image-responsive" src="../assets/about-3.jpg" alt="">
+                </div>
+                <div class="text-light p-1">
+                    <span class="orange-text-color">ON GOING</span>
+                    <h4 class="heading-4 my-1 text-dark"><a href="#">Modern Apartments</a></h4>
+                    <a class="flex mb-1" href="#">
+                        <span class="material-symbols-outlined location-icon">
+                            location_on
+                        </span>
+                        <small>Brooklyn, New York, United States</small>
+                    </a>
+                    <div>
+                        <p><strong>3.8 </strong>Katha, Height: <strong>G 7</strong></p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- contact address section  -->
+    </section>
 
-    <!-- form with map section  -->
-    <div class="contact-form-map">
-        <section id="contact-form" class="container">
-            <div class="contact-form">
-                <h4 class="heading-4 mb-1">Get A Quote</h4>
-                <form>
-                    <div class="medium-2 align-center gap-2">
-                        <div>
-                            <label for="name"></label>
-                            <input id="name" type="text" placeholder="Enter Your Name">
-                        </div>
-                        <div>
-                            <label for="email"></label>
-                            <input id="email" type="email" placeholder="Enter Your Email">
-                        </div>
-                        <div>
-                            <label for="select-services"></label>
-                            <select id="select-services">
-                                <option value="Select Service Type" selected disabled>Select Service Type</option>
-                                <option value="Property Management">Property Management</option>
-                                <option value="Mortgage Service">Mortgage Service</option>
-                                <option value="Consulting Service">Consulting Service</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="phone"></label>
-                            <input type="tel" id="phone" placeholder="Enter Your Phone Number">
-                        </div>
-                    </div>
-                    <div class="my-2">
-                        <label for="message"></label>
-                        <textarea rows="6" id="message" placeholder="Enter Message..."></textarea>
-                    </div>
-                    <div class="flex">
-                        <div>
-                            <label for="checkbox"></label>
-                            <input type="checkbox" id="checkbox">
-                        </div>
-                        <p> Save my name, email, and website in this browser for the next time I comment.
-                        </p>
-                    </div>
-                    <button class="btn btn-primary mt-2">GET A FREE SERVICE</button>
-                </form>
-            </div>
-        </section>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb
-                =!1m18!1m12!1m3!1d4291.745453141256!2d
-                77.39914006293347!3d28.504393188935435!
-                2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
-                !3m3!1m2!1s0x390ce626851f7009%3A0x62118
-                5133cfd1ad1!2sGeeksforGeeks%20%7C%20
-                Coding%20Classes%20%7C%20Noida!5e0!3m2!1
-                sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0; width: 100%;"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-    </div>
-    <!-- form with map section  -->
-
-    <!-- call to action section  -->
+    <!-- page title ends -->
     <div class="cta-wrapper">
         <div class="call-to-action">
             <div class="cta flex align-center flex items-center justify-between">
                 <div class="">
-                    <h3 class="title mb-1">Looking for a dream home?</h3>
+                    <h1 class="section-title mb-1">Looking for a dream home?</h1>
                     <p class="">
                         We help you make the dream of new house a reality
                     </p>
@@ -171,7 +125,6 @@
             </div>
         </div>
     </div>
-
     <!-- footer starts here  -->
     <footer>
         <div class="small-2 medium-2 larger-5 wrapper gap-1">

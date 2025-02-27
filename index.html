@@ -66,7 +66,7 @@
     <!-- main content -->
     <main>
         <!-- ---------------------------banner section starts here -------------------- -->
-        <section class="bg-dark">
+        <section id="banner" class="bg-dark">
             <div class="container large-2 align-center">
                 <!-- image container  -->
                 <div class="image-responsive animate__animated" data-zems="animate__fadeInLeft">
@@ -104,7 +104,7 @@
         <!-- -------------------------banner section ends here ------------------------ -->
 
         <!-- about section starts here  -->
-        <section class="container">
+        <section id="about" class="container">
             <div class="large-2 align-center gap-2">
                 <!-- image div  -->
                 <div class="image-responsive relative">
@@ -177,7 +177,7 @@
         <!------------------- about section ends here ---------------- -->
 
         <!-- -------------statistics section starts here ------------------ -->
-        <section class="bg-dark">
+        <section id="statistics" class="bg-dark">
             <!-- container  -->
             <div class="container small-2 large-4 gap-1">
                 <!-- individual stats component  -->
@@ -214,7 +214,7 @@
         <!-- ------------------------statistics section ends here------------------  -->
 
         <!-- -------------------about-us-2 section starts here ----------------- -->
-        <section class="container">
+        <section id="about-2" class="container">
             <div class="large-2 gap-3 align-center justify-center">
                 <!-- content container  -->
                 <div>
@@ -239,7 +239,7 @@
                         </div>
                         <div class="card-icon text-light">
                             <p class="flex items-center">2 <span class="material-symbols-outlined">
-                                        bathtub
+                                    bathtub
                                 </span></p>
                             <p>Bathrooms</p>
                         </div>
@@ -251,8 +251,8 @@
                         </div>
                         <div class="card-icon text-light">
                             <p class=" flex items-center">335 <span class="material-symbols-outlined">
-                                king_bed
-                            </span></p>
+                                    king_bed
+                                </span></p>
                             <p>square Ft</p>
                         </div>
                     </div>
@@ -270,7 +270,7 @@
                 </div>
                 <!-- img container  -->
                 <div class="image-responsive">
-                    <img class="image-responsive" src="./assets/9.png" alt="">
+                    <img class="image-responsive" src="./assets/about-6.png" alt="">
                 </div>
             </div>
         </section>
@@ -278,11 +278,11 @@
 
         <!-- ----------------services section starts here----------------------  -->
         <section class="bg-dark">
-            <div class="container">
+            <div id="services" class="container">
                 <!-- section header  -->
                 <div class="text-center">
                     <h5 class="sub-title">Our Services </>
-                    <h3 class="title">Our Main Focus </h3>
+                        <h3 class="title">Our Main Focus </h3>
                 </div>
                 <!-- card container  -->
                 <div class="medium-2 large-3 gap-2">
@@ -340,7 +340,7 @@
         <!-- ----------------------services section ends here--------------------  -->
 
         <!------------------- properties section starts here--------------------  -->
-        <section class="container">
+        <section id="properties" class="container">
             <div class="text-center">
                 <h5 class="sub-title">Properties</h5>
                 <h3 class="title">Featured Listings</h3>
@@ -350,10 +350,33 @@
                 <!-- card  -->
                 <div class="properties-card">
                     <div class="relative image-responsive">
-                        <img class="image-responsive" src="./assets/image.png" alt="">
+                        <div class="relative card-image">
+                            <a class="image-responsive" href="#">
+                                <img class="image-responsive" src="./assets/menu-banner-1.jpg" alt="">
+                            </a>
+                        </div>
                         <div>
                             <span class="badge rent">FOR RENT</span>
                         </div>
+                        <!-- <div class="location-container flex justify-between">
+                            <p><a class="flex" href="#">
+                                    <span class="material-symbols-outlined">
+                                        location_on
+                                    </span> belmont gardens, chicago
+                                </a></p>
+                            <div class="product-image-gallery">
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        photo_camera
+                                    </span>
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">
+                                        photo_camera
+                                    </span>
+                                </a>
+                            </div>
+                        </div> -->
                     </div>
                     <div class="text-light p-1">
                         <p class="orange-text-color"> <span class="para-md-size font-bold">$34,900</span>/Month</p>
@@ -384,87 +407,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="properties-card">
-                    <div class="relative image-responsive">
-                        <img class="image-responsive" src="./assets/image.png" alt="">
-                        <div>
-                            <span class="badge sale">FOR RENT</span>
-                        </div>
-                    </div>
-                    <div class="text-light p-1">
-                        <p class="orange-text-color"> <span class="para-md-size font-bold">$34,900</span>/Month</p>
-                        <h4 class="heading-4 text-dark my-1"><a href="#">Modern Apartments</a></h4>
-                        <p class="line-height-1">Beautiful Huge 1 Family House In Heart Of <br>
-                            Westbury. Newly Renovated With New Wood</p>
-                        <div class="all-3 align-center gap-1 icon-container">
-                            <small class="card-icon">
-                                <small class="flex items-center">3 <span class="material-symbols-outlined">
-                                        king_bed
-                                    </span> </small>
-                                <span>Bedrooms</span>
-                            </small>
-                            <small class="card-icon">
-                                <small class="flex items-center">2 <span class="material-symbols-outlined">
-                                        <span class="material-symbols-outlined">
-                                            bathtub
-                                        </span>
-                                    </span></small>
-                                <span>Bathrooms</span>
-                            </small>
-                            <small class="card-icon">
-                                <small class="flex items-center">335 <span class="material-symbols-outlined">
-                                        king_bed
-                                    </span></small>
-                                <span>square Ft</span>
-                            </small>
-                        </div>
-                    </div>
-                </div>
-                <div class="properties-card">
-                    <div class="relative image-responsive">
-                        <img class="image-responsive" src="./assets/image.png" alt="">
-                        <div>
-                            <span class="badge rent">FOR RENT</span>
-                        </div>
-                    </div>
-                    <div class="text-light p-1">
-                        <p class="orange-text-color"> <span class="para-md-size font-bold">$34,900</span>/Month</p>
-                        <h4 class="heading-4 text-dark my-1"><a href="#">Modern Apartments</a></h4>
-                        <p class="line-height-1">Beautiful Huge 1 Family House In Heart Of <br>
-                            Westbury. Newly Renovated With New Wood</p>
-                        <div class="all-3 align-center gap-1 icon-container">
-                            <small class="card-icon">
-                                <small class="flex items-center">3 <span class="material-symbols-outlined">
-                                        king_bed
-                                    </span> </small>
-                                <span>Bedrooms</span>
-                            </small>
-                            <small class="card-icon">
-                                <small class="flex items-center">2 <span class="material-symbols-outlined">
-                                        <span class="material-symbols-outlined">
-                                            bathtub
-                                        </span>
-                                    </span></small>
-                                <span>Bathrooms</span>
-                            </small>
-                            <small class="card-icon">
-                                <small class="flex items-center">335 <span class="material-symbols-outlined">
-                                        king_bed
-                                    </span></small>
-                                <span>square Ft</span>
-                            </small>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </section>
         <!-- -------------------------properties section ends here-------------------------  -->
 
         <!-- --------------------------apartment section starts here -------------------- -->
-        <section class="container section-padding">
+        <section id="apartment" class="container section-padding">
             <div class="text-center">
                 <h5 class="sub-title">Apartment Sketch</>
-                <h3 class="title">Apartments Plan</h3>
+                    <h3 class="title">Apartments Plan</h3>
             </div>
             <!-- categories or tab  -->
             <div class="para-md-size flex items-center flex-wrap justify-center gap-2 text-dark mb-3">
@@ -509,7 +461,7 @@
         <!-- --------------------parallax with pop-up  section ends here -------------------------- -->
 
         <!-- -----------------------Aminities  section starts here ------------------------- -->
-        <section class="container">
+        <section id="aminities" class="container">
             <div class="text-center">
                 <h5 class="sub-title">Our Aminities</h5>
                 <h3 class="title">Building Aminities</h3>
@@ -610,8 +562,8 @@
         <!----------------------- Aminities section ends here --------------------------- -->
 
         <!-- --------------------testimonials section starts here---------------------------->
-        <section id="testimonials">
-            <div class="container">
+        <section class="bg-dark">
+            <div id="testimonials" class="container">
                 <div class="text-center">
                     <h5 class="sub-title">Our Testimonial</h5>
                     <h3 class="title">Clients Feedback</h3>
@@ -689,7 +641,7 @@
         <!-- ----------------------testimonials section ends here ------------------------ -->
 
         <!----------------------------- blogs section starts here-----------------------  -->
-        <section class="container">
+        <section id="blogs" class="container">
             <!-- section header  -->
             <div class="text-center">
                 <h5 class="sub-title">News & Blogs</h5>

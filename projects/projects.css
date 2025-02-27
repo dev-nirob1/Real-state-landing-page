@@ -1,0 +1,12 @@
+.tab-panel li a{
+    padding: var(--btn-padding);
+    border: 1px solid var(--border-color);
+}
+.active{
+    background-color: black;
+    color: var(--secondary-color);
+}
+.dropdown-container select{
+    margin-left: .5rem;
+    padding: .5rem;
+}

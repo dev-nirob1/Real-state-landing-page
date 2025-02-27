@@ -39,6 +39,7 @@ body {
     --bg-dark: #F2F6F7;
     --dark-color: #114148;
     --text-light-color: #5C727D;
+    --border-color: #E4ECF2;
     --footer-bg: #171B2A;
     --bottom-footer-bg: #282B38;
     /* ---------------typography------------ */
@@ -51,7 +52,7 @@ body {
     /* paragraph  */
     --text-20: 1.25rem;
     /* box shadows  */
-    --header-shadow: 0 10px 20px 0 rgba(46, 56, 220, 0.2);
+    /* --header-shadow: 0 10px 20px 0 rgba(46, 56, 220, 0.2); */
     --services-card-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
     --properties-card-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
     --aminities-card-shadow: 0px 0px 6px 4px rgba(153, 178, 182, 0.1);
@@ -61,19 +62,33 @@ body {
     /* btn  */
     --btn-padding: .625rem 1rem;
     /* spacing  */
-    --section-name-padding: 5px 20px;
+    --sub-title-padding: 5px 20px;
     --btn-font-size: 1rem;
     --nav-items-padding: .5rem 2rem;
     --nav-links-padding: 1rem .8rem;
+    --header-padding: 0 1rem;
     --section-bottom-gap: 3rem;
     --section-padding: 2rem 1rem;
+    --page-title-padding: 1rem 1rem;
     --footer-wrapper: 6rem 2rem 2rem 2rem;
     --appartment-content-padding: 1rem;
     --cta-padding: 2rem;
 }
 
 /* common  */
-section {
+#banner,
+#about,
+#statistics,
+#about-2,
+#services,
+#properties,
+#apartment,
+#aminities,
+#testimonials,
+#blogs,
+#gallery,
+#contact-address,
+#contact-form {
     margin-bottom: var(--section-bottom-gap) !important;
     padding: var(--section-padding);
 }
@@ -165,26 +180,31 @@ a {
     background-color: var(--bg-light);
     color: var(--primary-color);
     font-family: var(--popins-font);
-    padding: var(--section-name-padding);
+    padding: var(--sub-title-padding);
     border-radius: 1.5rem;
     display: inline-block;
     margin-bottom: 1rem;
 }
-.page-title{
-    padding: 2rem;
+
+.page-title {
+    padding: var(--page-title-padding);
 }
-.page-title p{
+
+.page-title p {
     display: flex;
     align-items: center;
     font-weight: 700;
 }
-.page-title a{
+
+.page-title a {
     transition: color .3s ease-in-out;
     color: var(--text-light-color);
 }
-.page-title a:hover{
+
+.page-title a:hover {
     color: var(--primary-color);
 }
+
 /*--------------- typography ------------- */
 /* font-size  */
 .title {
@@ -353,23 +373,19 @@ header {
     background-color: var(--secondary-color);
     font-family: var(--popins-font);
     box-shadow: var(--header-shadow);
-}
-
-header figure {
-    margin: 0;
-    padding: 0;
+    padding: var(--header-padding);
 }
 
 header nav {
-    padding: var(--nav-items-padding);
+    padding: 1rem 0;
 }
 
-header nav ul li {
+header nav ul li:not(:last-child) {
     margin-right: 1rem;
 }
 
 header nav ul li a {
-    padding: var(--nav-links-padding);
+    padding: 1rem .8rem;
     font-size: 1.125rem;
     font-weight: 500;
 }
@@ -392,7 +408,7 @@ header nav ul li a:hover {
 /* --------------------------banner section starts here------------------------- */
 .banner-des {
     padding: 1rem 2rem;
-    border-right: 3px solid var(--text-light-color)
+    border-right: 3px solid var(--dark-color)
 }
 
 /*--------------------------- banner section ends here------------------ */
@@ -469,6 +485,23 @@ header nav ul li a:hover {
 /*----------------------- properties section starts here-------------------- */
 .properties-card {
     box-shadow: var(--properties-card-shadow);
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.properties-card img {
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.properties-card:hover img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+}
+
+.properties-card a:hover {
+    color: var(--primary-color);
 }
 
 .icon-container {
@@ -477,7 +510,7 @@ header nav ul li a:hover {
 }
 
 .icon-container .card-icon:not(:last-child) {
-    border-right: 1px solid var(--text-light-color);
+    border-right: 1px solid var(--border-color);
     padding: 6px;
 }
 
@@ -703,7 +736,7 @@ footer {
     background-color: var(--secondary-color);
     outline: none;
     border: none;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--border-color);
 }
 
 .footer-btn {
@@ -746,7 +779,9 @@ footer {
         --btn-padding: .8rem 1.25rem;
         /* --footer-wrapper: 6rem 2rem 2rem 2rem; */
         --section-bottom-gap: 4rem;
+        --header-padding: 0 3rem;
         --section-padding: 2rem 3rem;
+        --page-title-padding: 1rem 3rem;
         --appartment-content-padding: 2rem;
         --cta-padding: 3rem;
     }
@@ -770,6 +805,8 @@ footer {
         /* btn  */
         --btn-padding: 1rem 2.5rem;
         /* --footer-wrapper: 6rem 2rem 2rem 2rem; */
+        --header-padding: 0 5rem;
+        --page-title-padding: 1rem 5rem;
         --section-bottom-gap: 6rem;
         --section-padding: 3rem 5rem;
         --appartment-content-padding: 3rem;
