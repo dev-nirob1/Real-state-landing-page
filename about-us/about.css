@@ -1,0 +1,15 @@
+.image-container{
+    height: 100%;
+}
+.image-container img{
+    height: 100%;
+    width: 100%;
+}
+.statistics {
+    height: 100%;
+}
+
+.stats-content {
+    height: 100%;
+    align-items: center;
+}
