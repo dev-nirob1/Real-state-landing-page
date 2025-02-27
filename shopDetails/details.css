@@ -3,19 +3,23 @@
     color: var(--primary-color);
     transition: color .3s ease-in-out;
 }
+
 /* slider styles  */
 .swiper {
     height: 80vh;
     width: 100%;
 }
+
 .swiper-slide:hover img {
     transform: scale(1.05);
 }
+
 .swiper-slide img {
     transition: all .4s ease-in-out;
     width: 100%;
     height: 100%;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
     opacity: 0;
@@ -27,33 +31,40 @@
     width: 40px;
     border-radius: 50%;
 }
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
     font-size: 1.5rem !important;
 }
+
 .swiper:hover .swiper-button-next,
 .swiper:hover .swiper-button-prev {
     opacity: 1;
     visibility: visible;
 }
+
 /* slider styles ends */
 .details-container {
     padding: 1rem;
     width: 100%;
 }
+
 .heading {
     padding-left: .5rem;
     margin-bottom: 1rem;
     border-left: 2px solid var(--primary-color);
 }
+
 input,
 textarea {
-    border: 2px solid #e4ecf2;;
+    border: 2px solid #e4ecf2;
+    ;
     background-color: transparent;
     width: 100%;
     padding: 20px 10px;
     margin: 10px 0;
 }
+
 .video-bg-image {
     position: relative;
     background-image: url('../assets/about-4.jpg');
@@ -61,39 +72,48 @@ textarea {
     background-size: cover;
     height: 50vh;
 }
+
 .location-icon {
     color: var(--primary-color);
 }
+
 /* ---------sidbar starts--------------- */
 .sidebar {
     width: 100%;
     margin: 0 auto
 }
-.sidebar>div{
+
+.sidebar>div {
     padding: 1rem;
     margin-bottom: 2rem;
     border: 2px solid #e4ecf2;
 }
+
 .product-image {
     height: 70px;
     width: 100%;
 }
+
 .stars {
     display: flex;
     align-items: center;
 }
+
 .stars span {
     font-size: 1rem;
     color: rgb(253, 161, 14);
 }
+
 .price {
     color: var(--primary-color);
     font-weight: 600;
 }
+
 .prev-price {
     color: var(--primary-color);
     text-decoration: line-through;
 }
+
 .social-link a {
     color: var(--primary-color);
     background-color: var(--bg-light);
@@ -108,19 +128,23 @@ textarea {
 .details>div {
     margin-bottom: 3rem;
 }
+
 .property-feature {
     display: flex;
     align-items: center;
     gap: .825rem;
 }
+
 .property-feature span {
     padding: .5rem;
     color: var(--primary-color);
     background-color: var(--bg-light);
 }
+
 .details h4 {
     color: var(--dark-color);
 }
+
 .details p {
     color: var(--text-light-color);
     font-weight: 500;
@@ -131,21 +155,26 @@ textarea {
         padding: 2rem;
     }
 }
+
 @media (min-width: 992px) {
     .sidebar {
         padding-left: 0;
     }
+
     .details-container {
         padding: 3rem;
         gap: 2rem;
     }
+
     .details {
         padding: 0;
     }
+
     .video-bg-image {
         height: 80vh;
     }
-    .sidebar>div{
+
+    .sidebar>div {
         margin-bottom: 3rem;
     }
 }
