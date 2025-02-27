@@ -61,9 +61,13 @@
     <!-- header section ends -->
     <!-- page title  -->
     <div class="bg-dark">
-        <div class="container p-2">
+        <div class="container page-title">
             <h3 class="title">Contact Us</h3>
-            <p class="text-light">House - 24, Road - 01</p>
+            <p><span class="material-symbols-outlined orange-text-color">
+                    home
+                </span> <a href="#">Home</a> <span class="material-symbols-outlined">
+                    chevron_right
+                </span> <span>Contact Us</span></p>
         </div>
     </div>
     <!-- page title ends -->
@@ -94,49 +98,51 @@
     <!-- contact address section  -->
 
     <!-- form with map section  -->
-    <div style="margin-bottom:600px;" class="contact-form-map">
-        <section class="container contact-form">
-            <h4 class="heading-4 mb-1">Get A Quote</h4>
-            <form>
-                <div class="medium-2 gap-2">
-                    <div>
-                        <label for="name"></label>
-                        <input id="name" type="text" placeholder="Enter Your Name">
+    <div class="contact-form-map">
+        <section class="container">
+            <div class=" contact-form">
+                <h4 class="heading-4 mb-1">Get A Quote</h4>
+                <form>
+                    <div class="medium-2 gap-2">
+                        <div>
+                            <label for="name"></label>
+                            <input id="name" type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input id="email" type="email" placeholder="Enter Your Email">
+                        </div>
+                        <div>
+                            <label for="services"></label>
+                            <select id="services">
+                                <option value="Select Service Type" selected disabled>Select Service Type</option>
+                                <option value="Property Management">Property Management</option>
+                                <option value="Mortgage Service">Mortgage Service</option>
+                                <option value="Consulting Service">Consulting Service</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" placeholder="Enter Your Phone Number">
+                        </div>
                     </div>
-                    <div>
-                        <label for="email"></label>
-                        <input id="email" type="email" placeholder="Enter Your Email">
+                    <div class="my-2">
+                        <label for="message"></label>
+                        <textarea rows="6" id="message" placeholder="Enter Message..."></textarea>
                     </div>
-                    <div>
-                        <label for="services"></label>
-                        <select id="services">
-                            <option value="Select Service Type" selected disabled>Select Service Type</option>
-                            <option value="Property Management">Property Management</option>
-                            <option value="Mortgage Service">Mortgage Service</option>
-                            <option value="Consulting Service">Consulting Service</option>
-                        </select>
+                    <div class="flex">
+                        <div>
+                            <label for="checkbox"></label>
+                            <input type="checkbox" id="checkbox">
+                        </div>
+                        <p> Save my name, email, and website in this browser for the next time I comment.
+                        </p>
                     </div>
-                    <div>
-                        <label for="phone"></label>
-                        <input type="tel" id="phone" placeholder="Enter Your Phone Number">
-                    </div>
-                </div>
-                <div class="my-2">
-                    <label for="message"></label>
-                    <textarea rows="6" id="message" placeholder="Enter Message..."></textarea>
-                </div>
-                <div class="flex">
-                    <div>
-                        <label for="checkbox"></label>
-                        <input type="checkbox" id="checkbox">
-                    </div>
-                    <p> Save my name, email, and website in this browser for the next time I comment.
-                    </p>
-                </div>
-                <button class="btn btn-primary mt-2">GET A FREE SERVICE</button>
-            </form>
+                    <button class="btn btn-primary mt-2">GET A FREE SERVICE</button>
+                </form>
+            </div>
         </section>
-        <div class="map">
+        <div>
             <iframe src="https://www.google.com/maps/embed?pb
                 =!1m18!1m12!1m3!1d4291.745453141256!2d
                 77.39914006293347!3d28.504393188935435!
@@ -151,8 +157,8 @@
     </div>
     <!-- form with map section  -->
 
-     <!-- call to action section  -->
-     <div class="cta-wrapper">
+    <!-- call to action section  -->
+    <div class="cta-wrapper">
         <div class="call-to-action">
             <div class="cta flex align-center flex items-center justify-between">
                 <div class="">

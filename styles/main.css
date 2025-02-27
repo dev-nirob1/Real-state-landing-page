@@ -170,6 +170,21 @@ a {
     display: inline-block;
     margin-bottom: 1rem;
 }
+.page-title{
+    padding: 2rem;
+}
+.page-title p{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.page-title a{
+    transition: color .3s ease-in-out;
+    color: var(--text-light-color);
+}
+.page-title a:hover{
+    color: var(--primary-color);
+}
 /*--------------- typography ------------- */
 /* font-size  */
 .title {
