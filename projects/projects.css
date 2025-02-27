@@ -1,3 +1,9 @@
+.tab-panel-container{
+    padding: var( --tab-panel-padding);
+}
+.tab-panel{
+    margin: 2rem 0;
+}
 .tab-panel li a{
     padding: var(--btn-padding);
     border: 1px solid var(--border-color);

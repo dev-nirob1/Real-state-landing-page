@@ -69,6 +69,7 @@ body {
     --section-bottom-gap: 3rem;
     --section-padding: 2rem 1rem;
     --page-title-padding: 1rem 1rem;
+    --tab-panel-padding: 1rem .8rem;
     --footer-wrapper: 6rem 2rem 2rem 2rem;
     --appartment-content-padding: 1rem;
     --cta-padding: 2rem;
@@ -134,7 +135,7 @@ a {
     color: var(--primary-color);
 }
 
-.orange-text-color {
+.primary-color {
     color: var(--primary-color);
 }
 
@@ -406,7 +407,7 @@ header nav ul li a:hover {
     width: 200px;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(15px); 
+    transform: translateY(15px);
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
@@ -825,6 +826,7 @@ footer {
         --header-padding: 0 3rem;
         --section-padding: 2rem 3rem;
         --page-title-padding: 1rem 3rem;
+        --tab-panel-padding: 1rem 2.5rem;
         --appartment-content-padding: 2rem;
         --cta-padding: 3rem;
     }
@@ -850,6 +852,7 @@ footer {
         /* --footer-wrapper: 6rem 2rem 2rem 2rem; */
         --header-padding: 0 5rem;
         --page-title-padding: 1rem 5rem;
+        --tab-panel-padding: 1rem 4rem;
         --section-bottom-gap: 6rem;
         --section-padding: 3rem 5rem;
         --appartment-content-padding: 3rem;

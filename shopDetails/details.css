@@ -57,8 +57,7 @@
 
 input,
 textarea {
-    border: 2px solid #e4ecf2;
-    ;
+    border: 2px solid var(--border-color);
     background-color: transparent;
     width: 100%;
     padding: 20px 10px;
@@ -86,7 +85,7 @@ textarea {
 .sidebar>div {
     padding: 1rem;
     margin-bottom: 2rem;
-    border: 2px solid #e4ecf2;
+    border: 2px solid var(--border-color);
 }
 
 .product-image {
