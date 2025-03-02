@@ -1,18 +1,26 @@
-.tab-panel-container{
-    padding: var( --tab-panel-padding);
+.tab-panel-container {
+    padding: var(--tab-panel-padding);
 }
-.tab-panel{
+
+.tab-panel {
     margin: 2rem 0;
 }
-.tab-panel li a{
+
+.tab-panel li{
+    margin-bottom: 1rem;
+}
+
+.tab-panel li a {
     padding: var(--btn-padding);
     border: 1px solid var(--border-color);
 }
-.active{
+
+.active {
     background-color: #000;
     color: var(--secondary-color);
 }
-.dropdown-container select{
+
+.dropdown-container select {
     margin-left: .5rem;
     padding: .5rem;
 }
