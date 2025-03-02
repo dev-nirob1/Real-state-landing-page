@@ -409,6 +409,7 @@ header nav ul li a:hover {
     visibility: hidden;
     transform: translateY(15px);
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 999;
 }
 
 .header-dropdown:hover .dropdown-menu {
