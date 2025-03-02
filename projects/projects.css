@@ -9,7 +9,7 @@
     border: 1px solid var(--border-color);
 }
 .active{
-    background-color: black;
+    background-color: #000;
     color: var(--secondary-color);
 }
 .dropdown-container select{

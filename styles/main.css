@@ -76,21 +76,9 @@ body {
 }
 
 /* common  */
-#banner,
-#about,
-#statistics,
-#about-2,
-#services,
-#properties,
-#apartment,
-#aminities,
-#testimonials,
-#blogs,
-#gallery,
-#contact-address,
-#contact-form {
-    margin-bottom: var(--section-bottom-gap) !important;
-    padding: var(--section-padding);
+
+.p-4 {
+	padding: var(--section-padding);
 }
 
 h1,
@@ -591,7 +579,7 @@ header nav ul li a:hover {
 /* ----------------------appartement section ends here-----------------------  */
 
 /*------------------------parallax section starts here-----------------------*/
-#parallax {
+.parallax {
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
         url('../assets/about-5.jpg');
@@ -855,7 +843,7 @@ footer {
         --page-title-padding: 1rem 5rem;
         --tab-panel-padding: 1rem 4rem;
         --section-bottom-gap: 6rem;
-        --section-padding: 3rem 5rem;
+        --section-padding: 4rem 5rem;
         --appartment-content-padding: 3rem;
     }
 
