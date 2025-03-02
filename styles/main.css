@@ -119,10 +119,6 @@ a {
     color: var(--secondary-color)
 }
 
-.orange-bg-color {
-    color: var(--primary-color);
-}
-
 .primary-color {
     color: var(--primary-color);
 }
@@ -659,10 +655,6 @@ header nav ul li a:hover {
 /*------------------------Aminities section ends here--------------------*/
 
 /*-----------------------testimonials section starts here-----------------------*/
-#testimonials {
-    background-color: var(--section-bg);
-}
-
 #testimonials .testimonial {
     padding: 1.5rem 1rem;
     background-color: var(--secondary-color);
