@@ -60,21 +60,19 @@ const apartments = [
 ];
 
 
-const updateDetails = (data) => {
-    document.getElementById('title').innerText = data.title;
-    document.getElementById('des-1').innerText = data.desc1;
-    document.getElementById('des-2').innerText = data.desc2;
-    document.getElementById('sketch-image').src = data.image;
-}
-
-if(apartments.length > 0){
-    updateDetails(apartments[0])
-}
-
-document.getElementById('categories').addEventListener('click', e => {
-    if (e.target.tagName === 'P') {
-        const category = e.target.innerText;
-        const selectedCategory = apartments.find(appartment => category.toLowerCase() === appartment.title.toLowerCase());
-        updateDetails(selectedCategory)
-    }
-});
+// const updateDetails = (data) => {
+//     document.getElementById('title').innerText = data.title;
+//     document.getElementById('des-1').innerText = data.desc1;
+//     document.getElementById('des-2').innerText = data.desc2;
+//     document.getElementById('sketch-image').src = data.image;
+// }
+// if(apartments.length > 0){
+//     updateDetails(apartments[0])
+// }
+// document.getElementById('categories').addEventListener('click', e => {
+//     if (e.target.tagName === 'P') {
+//         const category = e.target.innerText;
+//         const selectedCategory = apartments.find(appartment => category.toLowerCase() === appartment.title.toLowerCase());
+//         updateDetails(selectedCategory)
+//     }
+// });

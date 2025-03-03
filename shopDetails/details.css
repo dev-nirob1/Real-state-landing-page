@@ -65,11 +65,10 @@ textarea {
 }
 .gallery-image{
     width: 100%;
-    height: 300px;
 }
 .gallery-image img{
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
 
 .video-bg-image {

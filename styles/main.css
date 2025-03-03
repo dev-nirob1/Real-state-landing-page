@@ -78,7 +78,7 @@ body {
 /* common  */
 
 .p-4 {
-	padding: var(--section-padding);
+    padding: var(--section-padding);
 }
 
 h1,
@@ -465,6 +465,35 @@ header nav ul li a:hover {
 }
 
 /*-------------------statistics section ends here------------------*/
+/* ---------about us 2 section ------------ */
+.image-container {
+    height: 90vh;
+    width: 100%;
+}
+
+.left-image {
+    height: 90vh;
+    width: 100%;
+}
+
+.left-image img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-image {
+    height: 45vh;
+    width: 100%;
+}
+
+.right-image img {
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ---------about us 2 section ends ------------ */
 
 /*------------------------ services section starts here----------------  */
 .card {
