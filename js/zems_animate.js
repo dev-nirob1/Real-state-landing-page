@@ -30,7 +30,7 @@ const handleScrollAnimation = () => {
     zems = el.getAttribute("data-zems")
     if (elementInView(el, 1.25)) {      
       if(zems != null){
-        console.log(zems);
+        // console.log(zems);
         displayScrollElement(el, zems);
       }
     } else if (elementOutofView(el)) {
