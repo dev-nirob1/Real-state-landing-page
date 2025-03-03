@@ -358,6 +358,9 @@ header {
     font-family: var(--popins-font);
     box-shadow: var(--header-shadow);
     padding: var(--header-padding);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 header nav {
@@ -466,29 +469,20 @@ header nav ul li a:hover {
 
 /*-------------------statistics section ends here------------------*/
 /* ---------about us 2 section ------------ */
-.image-container {
-    height: 90vh;
-    width: 100%;
-}
 
-.left-image {
-    height: 90vh;
+.left-image, .right-image {
+    height: 50vh;
     width: 100%;
 }
 
 .left-image img {
-    height: 90vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.right-image {
-    height: 45vh;
-    width: 100%;
-}
-
 .right-image img {
-    height: 45vh;
+    height: 50%;
     width: 100%;
     object-fit: cover;
 }
@@ -847,6 +841,11 @@ footer {
         position: absolute;
         bottom: 100px;
     }
+    .left-image, .right-image {
+        height: 70vh;
+        width: 100%;
+    }
+    
 }
 
 @media (min-width: 992px) {
@@ -876,6 +875,10 @@ footer {
     .hamburger {
         display: none;
     }
+    .left-image, .right-image {
+        height: 80vh;
+        width: 100%;
+    }
 
     /* cta  */
     .cta {
@@ -894,5 +897,9 @@ footer {
         --heading-1: 2.75rem;
         --heading-1: 2.25rem;
         --heading-4: 1.5rem;
+    }
+    .left-image, .right-image {
+        height: 90vh;
+        width: 100%;
     }
 }
