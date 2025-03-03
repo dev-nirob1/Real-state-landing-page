@@ -63,12 +63,18 @@ textarea {
     padding: 20px 10px;
     margin: 10px 0;
 }
-.gallery-image{
+
+.gallery-image-left, .gallery-image-right{
+    height: 600px;
     width: 100%;
 }
-.gallery-image img{
+.gallery-image-left img{
     width: 100%;
-    height: 300px;
+    height: 50%;
+}
+.gallery-image-right img{
+    height: 100%;
+    width: 100%;
 }
 
 .video-bg-image {
